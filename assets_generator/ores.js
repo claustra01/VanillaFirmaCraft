@@ -233,6 +233,12 @@ const oreType = [
     "name": "certus_quartz",
     "modId": "tfc_metallum",
     "isGraded": false
+  },
+  // firmalife graded ores
+  {
+    "name": "chromite",
+    "modId": "firmalife",
+    "isGraded": true
   }
 ]
 
