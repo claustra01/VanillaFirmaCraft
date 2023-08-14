@@ -1,4 +1,7 @@
+/crash-reports
 /logs
 /saves
+/user*.json
 
 /config/jei/world
+/kubejs/exported
