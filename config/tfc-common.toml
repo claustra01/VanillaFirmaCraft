@@ -4,7 +4,7 @@
 	# 1. This ONLY sets the corresponding config option in Forge's config.
 	# 2. This ONLY will set the default if it was set to 'default' (or vanilla generation)
 	# 3. This DOES NOT guarantee that the world generation will be TFC, if another mod sets the default another way
-	setTFCWorldTypeAsDefault = true
+	setTFCWorldTypeAsDefault = false
 
 [calendar]
 	# The number of days in a month, for newly created worlds.
