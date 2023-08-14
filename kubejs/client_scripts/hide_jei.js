@@ -12,6 +12,8 @@ onEvent('jei.hide.items', event => {
 				event.hide(`${ore.modId}:ore/poor_${ore.name}/${rock}`)
 				event.hide(`${ore.modId}:ore/normal_${ore.name}/${rock}`)
 				event.hide(`${ore.modId}:ore/rich_${ore.name}/${rock}`)
+				event.hide(`${ore.modId}:ore/poor_${ore.name}`)
+				event.hide(`${ore.modId}:ore/rich_${ore.name}`)
 			} else {
 				event.hide(`${ore.modId}:ore/${ore.name}/${rock}`)
 			}
