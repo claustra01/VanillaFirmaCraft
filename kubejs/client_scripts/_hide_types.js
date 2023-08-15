@@ -131,3 +131,41 @@ global.disableFirmalifeWoodItemList = [
   "hanger",
   "jarbnet"
 ]
+
+// dirt
+global.disableTfcDirtList = [
+  "silt",
+  "loam",
+  "sandy_loam",
+  "silty_loam"
+]
+global.disableTfcDirtBlockList = [
+  "dirt",
+  "grass",
+  "grass_path",
+  "clay",
+  "clay_grass",
+  "farmland",
+  "rooted_dirt",
+  "mud",
+  "mud_bricks",
+  "drying_bricks",
+  "mud_brick"
+]
+
+// sand
+global.disableTfcSandList = [
+  "brown",
+  "white",
+  "black",
+  "red",
+  "yellow",
+  "green",
+  "pink"
+]
+global.disableTfcSandBlockList = [
+  "sand",
+  "raw_sandstone",
+  "smooth_sandstone",
+  "cut_sandstone"
+]
