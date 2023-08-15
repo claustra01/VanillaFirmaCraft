@@ -2,9 +2,9 @@
 #Rock settings
 [Rocks]
 	rock = true
-	granite_rock = true
-	diorite_rock = true
-	andesite_rock = true
+	granite_rock = false
+	diorite_rock = false
+	andesite_rock = false
 	sand_rock = false
 	red_sand_rock = false
 	gravel_rock = false
