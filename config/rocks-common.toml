@@ -5,12 +5,12 @@
 	granite_rock = true
 	diorite_rock = true
 	andesite_rock = true
-	sand_rock = true
-	red_sand_rock = true
-	gravel_rock = true
-	end_stone_rock = true
-	netherrack_rock = true
-	soul_soil_rock = true
+	sand_rock = false
+	red_sand_rock = false
+	gravel_rock = false
+	end_stone_rock = false
+	netherrack_rock = false
+	soul_soil_rock = false
 
 #Stick settings
 [Sticks]
@@ -20,8 +20,8 @@
 	acacia_stick = true
 	jungle_stick = true
 	dark_oak_stick = true
-	crimson_stick = true
-	warped_stick = true
+	crimson_stick = false
+	warped_stick = false
 
 #Misc settings
 [Misc]
