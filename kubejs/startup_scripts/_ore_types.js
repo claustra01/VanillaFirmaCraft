@@ -125,6 +125,12 @@ global.tfcStyleOreList = [
     "modId": "tfc_metallum",
     "isGraded": true
   },
+  // firmalife graded ores
+  {
+    "name": "chromite",
+    "modId": "firmalife",
+    "isGraded": true
+  },
   // tfc non-graded ores
   {
     "name": "bituminous_coal",
@@ -133,6 +139,11 @@ global.tfcStyleOreList = [
   },
   {
     "name": "lignite",
+    "modId": "tfc",
+    "isGraded": false
+  },
+  {
+    "name": "kaolinite",
     "modId": "tfc",
     "isGraded": false
   },
@@ -231,12 +242,6 @@ global.tfcStyleOreList = [
     "name": "certus_quartz",
     "modId": "tfc_metallum",
     "isGraded": false
-  },
-  // firmalife graded ores
-  {
-    "name": "chromite",
-    "modId": "firmalife",
-    "isGraded": true
   }
 ]
 
