@@ -2,28 +2,21 @@
 
 console.info('JEI item hiding...')
 
-const woodList = [
-  "oak",
-  "spruce",
-  "birch",
-  "jungle",
-  "acacia",
-  "dark_oak"
-]
-
 onEvent('jei.hide.items', event => {
 	// wood blocks
-	woodList.forEach(wood => {
-    event.hide(`minecraft:${wood}_planks`)
-    event.hide(`minecraft:${wood}_slab`)
-    event.hide(`minecraft:${wood}_stairs`)
-    event.hide(`minecraft:${wood}_fence`)
-    event.hide(`minecraft:${wood}_sign`)
-    event.hide(`minecraft:${wood}_button`)
-    event.hide(`minecraft:${wood}_pressure_plate`)
-    event.hide(`minecraft:${wood}_door`)
-    event.hide(`minecraft:${wood}_trapdoor`)
-    event.hide(`minecraft:${wood}_fence_gate`)
-    event.hide(`minecraft:${wood}_boat`)
+	global.tfcWoodType.forEach(wood => {
+    if (wood.replaced == true) {
+      event.hide(`minecraft:${wood.vanilla}_planks`)
+      event.hide(`minecraft:${wood.vanilla}_slab`)
+      event.hide(`minecraft:${wood.vanilla}_stairs`)
+      event.hide(`minecraft:${wood.vanilla}_fence`)
+      event.hide(`minecraft:${wood.vanilla}_sign`)
+      event.hide(`minecraft:${wood.vanilla}_button`)
+      event.hide(`minecraft:${wood.vanilla}_pressure_plate`)
+      event.hide(`minecraft:${wood.vanilla}_door`)
+      event.hide(`minecraft:${wood.vanilla}_trapdoor`)
+      event.hide(`minecraft:${wood.vanilla}_fence_gate`)
+      event.hide(`minecraft:${wood.vanilla}_boat`)
+    }
 	})
 })

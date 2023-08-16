@@ -1,9 +1,13 @@
-global.tfcStyleOreList = [
+global.newOreType = [
   // tfc graded ores
+  // vein: [rarity, maxY, minY, maxSize, minSize]
   {
     "name": "native_copper",
     "modId": "tfc",
-    "isGraded": true
+    "isGraded": true,
+    "veinData": {
+      "minecraft:overworld": [120, 72, 0, 1000, 700]
+    }
   },
   {
     "name": "native_gold",
@@ -242,56 +246,5 @@ global.tfcStyleOreList = [
     "name": "certus_quartz",
     "modId": "tfc_metallum",
     "isGraded": false
-  }
-]
-
-global.tfcStyleRockList = [
-  // overworld
-  {
-    "name": "stone",
-    "hardness": 1.5,
-    "resistance": 6
-  },
-  {
-    "name": "deepslate",
-    "hardness": 3,
-    "resistance": 6
-  },
-  {
-    "name": "granite",
-    "hardness": 1.5,
-    "resistance": 6
-  },
-  {
-    "name": "diorite",
-    "hardness": 1.5,
-    "resistance": 6
-  },
-  {
-    "name": "andesite",
-    "hardness": 1.5,
-    "resistance": 6
-  },
-  // nether
-  {
-    "name": "netherrack",
-    "hardness": 0.4,
-    "resistance": 0.4
-  },
-  {
-    "name": "basalt",
-    "hardness": 1.25,
-    "resistance": 4.2
-  },
-  {
-    "name": "blackstone",
-    "hardness": 1.5,
-    "resistance": 6
-  },
-  // the end
-  {
-    "name": "endstone",
-    "hardness": 3,
-    "resistance": 9
   }
 ]

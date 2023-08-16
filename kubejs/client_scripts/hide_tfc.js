@@ -5,8 +5,8 @@ console.info('JEI item hiding...')
 onEvent('jei.hide.items', event => {
 
 	// tfc-style ores
-	global.tfcStyleOreList.forEach(ore => {
-		global.disableTfcRockList.forEach(rock => {
+	global.newOreType.forEach(ore => {
+		global.tfcRockType.forEach(rock => {
 			// tfc ore blocks
 			if (ore.isGraded) {
 				event.hide(`${ore.modId}:ore/poor_${ore.name}/${rock}`)
@@ -22,11 +22,11 @@ onEvent('jei.hide.items', event => {
 	})
 
 	// tfc stone blocks
-	global.disableTfcRockList.forEach(rock => {
-		global.disableTfcRockBlockList.forEach(type => {
+	global.tfcRockType.forEach(rock => {
+		global.tfcRockBlocks.forEach(type => {
 			let item = `tfc:rock/${type}/${rock}`
 			let isIgnored = false
-			global.disableIgnoreRockBlockList.forEach(ignore => {
+			global.keepTfcRockBlocks.forEach(ignore => {
 				if (item == ignore) isIgnored = true
 			})
 			if (!isIgnored) event.hide(item)
@@ -38,14 +38,14 @@ onEvent('jei.hide.items', event => {
 	})
 
 	// tfc stone tools
-	global.disableTfcStoneList.forEach(stone => {
-		global.disableStoneToolList.forEach(type => {
+	global.tfcStoneType.forEach(stone => {
+		global.tfcStoneTools.forEach(type => {
 			event.hide(`tfc:stone/${type}/${stone}`)
 		})
 	})
 
 	// tfc wood items
-	global.disableTfcWoodList.forEach(wood => {
+	global.tfcWoodType.forEach(wood => {
 		// replaced
 		event.hide(`tfc:wood/log/${wood.name}`)
 		event.hide(`tfc:wood/stripped_log/${wood.name}`)
@@ -55,21 +55,21 @@ onEvent('jei.hide.items', event => {
 		event.hide(`tfc:wood/sapling/${wood.name}`)
 		// disabled
 		if (wood.replaced == false) {
-			global.disableTfcWoodItemList.forEach(type => {
+			global.tfcWoodItems.forEach(type => {
 				event.hide(`tfc:wood/${type}/${wood.name}`)
 			})
-			global.disableTfcWoodPlankList.forEach(type => {
+			global.tfcWoodBlocks.forEach(type => {
 				event.hide(`tfc:wood/planks/${wood.name}_${type}`)
 			})
-			global.disableFirmalifeWoodItemList.forEach(type => {
+			global.firmalifeWoodItems.forEach(type => {
 				event.hide(`firmalife:wood/${type}/${wood.name}`)
 			})
 		}
 	})
 
 	// tfc dirt blocks
-	global.disableTfcDirtList.forEach(dirt => {
-		global.disableTfcDirtBlockList.forEach(type => {
+	global.tfcDirtType.forEach(dirt => {
+		global.tfcDirtBlocks.forEach(type => {
 			event.hide(`tfc:${type}/${dirt}`)
 			event.hide(`tfc:${type}/${dirt}_slab`)
 			event.hide(`tfc:${type}/${dirt}_stairs`)
@@ -78,8 +78,8 @@ onEvent('jei.hide.items', event => {
 	})
 
 	// tfc sand blocks
-	global.disableTfcSandList.forEach(sand => {
-		global.disableTfcSandBlockList.forEach(type => {
+	global.tfcSandType.forEach(sand => {
+		global.tfcSandBlocks.forEach(type => {
 			event.hide(`tfc:${type}/${sand}`)
 			event.hide(`tfc:${type}/${sand}_slab`)
 			event.hide(`tfc:${type}/${sand}_stairs`)

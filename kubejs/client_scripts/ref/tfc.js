@@ -1,5 +1,5 @@
 // rocks
-global.disableTfcRockList = [
+global.tfcRockType = [
   "granite",
   "diorite",
   "gabbro",
@@ -21,7 +21,7 @@ global.disableTfcRockList = [
   "gneiss",
   "marble"
 ]
-global.disableTfcRockBlockList = [
+global.tfcRockBlocks = [
   "raw",
   "hardened",
   "smooth",
@@ -40,19 +40,19 @@ global.disableTfcRockBlockList = [
   "anvil",
   "magma"
 ]
-global.disableIgnoreRockBlockList = [
+global.keepTfcRockBlocks = [
   "tfc:rock/anvil/dacite",
   "tfc:rock/loose/dacite"
 ]
 
 // stones
-global.disableTfcStoneList = [
+global.tfcStoneType = [
   //"igneous_extrusive",
   "igneous_intrusive",
   "metamorphic",
   "sedimentary"
 ]
-global.disableStoneToolList = [
+global.tfcStoneTools = [
   "axe",
   "axe_head",
   "hammer",
@@ -68,9 +68,10 @@ global.disableStoneToolList = [
 ]
 
 // woods
-global.disableTfcWoodList = [
+global.tfcWoodType = [
   {
     "name": "acacia",
+    "vanilla": "acacia",
     "replaced": true
   },
   {
@@ -83,6 +84,7 @@ global.disableTfcWoodList = [
   },
   {
     "name": "birch",
+    "vanilla": "birch",
     "replaced": true
   },
   {
@@ -99,6 +101,7 @@ global.disableTfcWoodList = [
   },
   {
     "name": "hickory",
+    "vanilla": "dark_oak",
     "replaced": true
   },
   {
@@ -111,6 +114,7 @@ global.disableTfcWoodList = [
   },
   {
     "name": "oak",
+    "vanilla": "oak",
     "replaced": true
   },
   {
@@ -127,10 +131,12 @@ global.disableTfcWoodList = [
   },
   {
     "name": "sequoia",
+    "vanilla": "jungle",
     "replaced": true
   },
   {
     "name": "spruce",
+    "vanilla": "spruce",
     "replaced": true
   },
   {
@@ -146,7 +152,7 @@ global.disableTfcWoodList = [
     "replaced": false
   }
 ]
-global.disableTfcWoodItemList = [
+global.tfcWoodItems = [
   "lumber",
   "support",
   "boat",
@@ -162,7 +168,7 @@ global.disableTfcWoodItemList = [
   "lectern",
   "scribing_table"
 ]
-global.disableTfcWoodPlankList = [
+global.tfcWoodBlocks = [
   "bookshelf",
   "door",
   "trapdoor",
@@ -177,20 +183,20 @@ global.disableTfcWoodPlankList = [
   "workbench",
   "loom"
 ]
-global.disableFirmalifeWoodItemList = [
+global.firmalifeWoodItems = [
   "food_shelf",
   "hanger",
   "jarbnet"
 ]
 
 // dirt
-global.disableTfcDirtList = [
+global.tfcDirtType = [
   "silt",
   "loam",
   "sandy_loam",
   "silty_loam"
 ]
-global.disableTfcDirtBlockList = [
+global.tfcDirtBlocks = [
   "dirt",
   "grass",
   "grass_path",
@@ -205,7 +211,7 @@ global.disableTfcDirtBlockList = [
 ]
 
 // sand
-global.disableTfcSandList = [
+global.tfcSandType = [
   "brown",
   "white",
   "black",
@@ -214,7 +220,7 @@ global.disableTfcSandList = [
   "green",
   "pink"
 ]
-global.disableTfcSandBlockList = [
+global.tfcSandBlocks = [
   "sand",
   "raw_sandstone",
   "smooth_sandstone",
