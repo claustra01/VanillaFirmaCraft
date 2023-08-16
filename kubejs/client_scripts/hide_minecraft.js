@@ -17,6 +17,7 @@ onEvent('jei.hide.items', event => {
     event.hide(`minecraft:${wood}_planks`)
     event.hide(`minecraft:${wood}_slab`)
     event.hide(`minecraft:${wood}_stairs`)
+    event.hide(`minecraft:${wood}_fence`)
     event.hide(`minecraft:${wood}_sign`)
     event.hide(`minecraft:${wood}_button`)
     event.hide(`minecraft:${wood}_pressure_plate`)

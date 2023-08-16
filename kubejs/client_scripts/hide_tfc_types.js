@@ -69,25 +69,82 @@ global.disableStoneToolList = [
 
 // woods
 global.disableTfcWoodList = [
-  //"acacia",
-  "ash",
-  "aspen",
-  //"birch",
-  "blackwood",
-  "chestnut",
-  "douglas_fir",
-  //"hickory",
-  "kapok",
-  "maple",
-  //"oak",
-  "palm",
-  "pine",
-  "rosewood",
-  //"sequoia",
-  //"spruce",
-  "sycamore",
-  "white_cedar",
-  "willow"
+  {
+    "name": "acacia",
+    "replaced": true
+  },
+  {
+    "name": "ash",
+    "replaced": false
+  },
+  {
+    "name": "aspen",
+    "replaced": false
+  },
+  {
+    "name": "birch",
+    "replaced": true
+  },
+  {
+    "name": "blackwood",
+    "replaced": false
+  },
+  {
+    "name": "chestnut",
+    "replaced": false
+  },
+  {
+    "name": "douglas_fir",
+    "replaced": false
+  },
+  {
+    "name": "hickory",
+    "replaced": true
+  },
+  {
+    "name": "kapok",
+    "replaced": false
+  },
+  {
+    "name": "maple",
+    "replaced": false
+  },
+  {
+    "name": "oak",
+    "replaced": true
+  },
+  {
+    "name": "palm",
+    "replaced": false
+  },
+  {
+    "name": "pine",
+    "replaced": false
+  },
+  {
+    "name": "rosewood",
+    "replaced": false
+  },
+  {
+    "name": "sequoia",
+    "replaced": true
+  },
+  {
+    "name": "spruce",
+    "replaced": true
+  },
+  {
+    "name": "sycamore",
+    "replaced": false
+  },
+  {
+    "name": "white_cedar",
+    "replaced": false
+  },
+  {
+    "name": "willow",
+    "replaced": false
+  }
 ]
 global.disableTfcWoodItemList = [
   "lumber",
@@ -95,13 +152,7 @@ global.disableTfcWoodItemList = [
   "boat",
   "chest_minecart",
   "sign",
-  "log",
-  "stripped_log",
-  "wood",
-  "stripped_wood",
-  "leaves",
   "planks",
-  "sapling",
   "twig",
   "fallen_leaves",
   "trapped_chest",

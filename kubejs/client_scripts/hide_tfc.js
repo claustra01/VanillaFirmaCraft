@@ -46,15 +46,25 @@ onEvent('jei.hide.items', event => {
 
 	// tfc wood items
 	global.disableTfcWoodList.forEach(wood => {
-		global.disableTfcWoodItemList.forEach(type => {
-			event.hide(`tfc:wood/${type}/${wood}`)
-		})
-		global.disableTfcWoodPlankList.forEach(type => {
-			event.hide(`tfc:wood/planks/${wood}_${type}`)
-		})
-		global.disableFirmalifeWoodItemList.forEach(type => {
-			event.hide(`firmalife:wood/${type}/${wood}`)
-		})
+		// replaced
+		event.hide(`tfc:wood/log/${wood.name}`)
+		event.hide(`tfc:wood/stripped_log/${wood.name}`)
+		event.hide(`tfc:wood/wood/${wood.name}`)
+		event.hide(`tfc:wood/stripped_wood/${wood.name}`)
+		event.hide(`tfc:wood/leaves/${wood.name}`)
+		event.hide(`tfc:wood/sapling/${wood.name}`)
+		// disabled
+		if (wood.replaced == false) {
+			global.disableTfcWoodItemList.forEach(type => {
+				event.hide(`tfc:wood/${type}/${wood.name}`)
+			})
+			global.disableTfcWoodPlankList.forEach(type => {
+				event.hide(`tfc:wood/planks/${wood.name}_${type}`)
+			})
+			global.disableFirmalifeWoodItemList.forEach(type => {
+				event.hide(`firmalife:wood/${type}/${wood.name}`)
+			})
+		}
 	})
 
 	// tfc dirt blocks
