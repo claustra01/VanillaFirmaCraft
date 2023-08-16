@@ -4,8 +4,8 @@ console.info('New ores registering...')
 
 onEvent('block.registry', event => {
 	// tfc-style ores
-	global.tfcStyleOreList.forEach(ore => {
-		global.tfcStyleRockList.forEach(rock => {
+	global.newOreType.forEach(ore => {
+		global.newRockType.forEach(rock => {
 			// register block
 			event.create(`ore/${ore.name}/${rock.name}`)
 				.material("stone")
