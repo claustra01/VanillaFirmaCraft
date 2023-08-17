@@ -85,5 +85,10 @@ onEvent('jei.hide.items', event => {
 			event.hide(`tfc:${type}/${sand}_wall`)
 		})
 	})
+
+	// tfc and firmalife plants
+	global.tfcPlants.forEach(plant => {
+		event.hide(`${plant}`)
+	})
 	
 })
