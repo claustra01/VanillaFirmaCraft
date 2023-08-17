@@ -26,7 +26,7 @@ onEvent('recipes', event => {
         "LWL"
       ], {
         "L": `minecraft:${wood.vanilla}_log`,
-        "W": `tfc:wood/lumber/${wood.name}`,
+        "W": `tfc:wood/lumber/${wood.name}`
       })
       event.shaped(`2x firmalife:wood/jarbnet/${wood.name}`, [
         "L  ",
@@ -45,8 +45,13 @@ onEvent('tags.items', event => {
   global.tfcWoodType.forEach(wood => {
   	// add log tags
     if (wood.replaced) {
-      event.add(`tfc:${wood.name}_logs`, [`minecraft:${wood.vanilla}_log`, `minecraft:stripped_${wood.vanilla}_log`])
-      event.add(`tfc:${wood.name}_logs`, [`minecraft:${wood.vanilla}_wood`, `minecraft:stripped_${wood.vanilla}_wood`])
+      const logs = [
+        `minecraft:${wood.vanilla}_log`,
+        `minecraft:stripped_${wood.vanilla}_log`,
+        `minecraft:${wood.vanilla}_wood`,
+        `minecraft:stripped_${wood.vanilla}_wood`
+      ]
+      event.add(`tfc:${wood.name}_logs`, logs)
     }
 	})
 })

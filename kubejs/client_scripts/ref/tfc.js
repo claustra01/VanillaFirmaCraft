@@ -159,7 +159,6 @@ global.tfcWoodItems = [
   "chest_minecart",
   "sign",
   "planks",
-  "twig",
   "fallen_leaves",
   "trapped_chest",
   "chest",
