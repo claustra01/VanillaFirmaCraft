@@ -16,6 +16,10 @@ const polishableRocks = [
 ]
 
 onEvent('recipes', event => {
+  // stone anvil
+  event.shapeless("tfc:rock/anvil/granite", ["#forge:stone", "#tfc:hammers"])
+    .damageIngredient(1)
+
   // bricks
   event.shapeless("kubejs:brick/stone", ["rocks:rock", "#tfc:chisels"])
     .damageIngredient(1)
@@ -80,4 +84,10 @@ onEvent('tags.items', event => {
 
   // flux
   event.add("tfc:fluxstone", ["minecraft:calcite", "rocks:seashell"])
+})
+
+onEvent('lootjs', event => {
+  // stone anvil
+  event.addBlockLootModifier("tfc:rock/anvil/granite")
+    .replaceLoot("tfc:rock/loose/granite", "tfc:rock/anvil/granite");
 })
