@@ -3,16 +3,15 @@
 console.info('Stone compat recipes registering...')
 
 const rocks = [
-  "rocks:rock",
-  "rocks:granite_rock",
-  "rocks:diorite_rock",
-  "rocks:andesite_rock",
-  "rocks:sand_rock",
-  "rocks:red_sand_rock",
-  "rocks:gravel_rock",
-  "rocks:end_stone_rock",
-  "rocks:netherrack_rock",
-  "rocks:soul_soil_rock"
+  "rocks:cobblestone_splitter",
+  "rocks:granite_splitter",
+  "rocks:diorite_splitter",
+  "rocks:andesite_splitter",
+  "rocks:sandstone_splitter",
+  "rocks:red_sandstone_splitter",
+  "rocks:end_stone_splitter",
+  "rocks:netherrack_splitter",
+  "rocks:soul_soil_splitter"
 ]
 
 const polishRecipes = [
@@ -34,7 +33,7 @@ onEvent('recipes', event => {
     .damageIngredient(1)
 
   // bricks
-  event.shapeless("kubejs:brick/stone", ["rocks:rock", "#tfc:chisels"])
+  event.shapeless("kubejs:brick/stone", ["rocks:cobblestone_splitter", "#tfc:chisels"])
     .damageIngredient(1)
   event.shapeless("4x kubejs:brick/stone", ["minecraft:cobblestone", "#tfc:chisels"])
     .damageIngredient(1)
