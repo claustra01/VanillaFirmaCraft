@@ -535,7 +535,7 @@ newOreType.forEach(ore => {
                       tfc:ore/small_${ore.name}, 15
                   ` : ""}
               >
-              S:continuity=20.0
+              S:continuity=10.0
               I:distortion=1
               S:id=
           }
@@ -546,4 +546,21 @@ newOreType.forEach(ore => {
       console.log("Config creation successful. Output saved at", filePath)
     })
   })
+})
+
+// export translation data
+let langData = ""
+const capitalize = (str) => {
+  const words = str.split('_');
+  return words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
+newOreType.forEach(ore => {
+  newRockType.forEach(rock => {
+    langData += `"block.kubejs.ore.${ore.name}.${rock.name}": "${capitalize(rock.name)} ${capitalize(ore.name)}",\n`
+    langData += `"block.kubejs.ore.${ore.name}.${rock.name}.prospected": "${capitalize(ore.name)}",\n`
+  })
+})
+fs.writeFile('./export.txt', langData, (err) => {
+  if (err) throw err
+  console.log("Translation data creation successful. Output saved at ./export.txt")
 })
