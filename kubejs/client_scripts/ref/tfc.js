@@ -40,10 +40,6 @@ global.tfcRockBlocks = [
   "anvil",
   "magma"
 ]
-global.keepTfcRockBlocks = [
-  "tfc:rock/anvil/dacite",
-  "tfc:rock/loose/dacite"
-]
 
 // stones
 global.tfcStoneType = [
