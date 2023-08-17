@@ -3,6 +3,18 @@
 console.info('JEI item hiding...')
 
 onEvent('jei.hide.items', event => {
+  // remove vanilla tools
+  for (const material of ["wooden", "stone", "iron", "diamond", "netherite", "golden"]) {
+    for (const tool of ["shovel", "pickaxe", "axe", "hoe", "sword"]) {
+      event.hide(`minecraft:${material}_${tool}`) 
+    }
+  }
+  for (const material of ["iron", "diamond", "netherite", "golden"]) {
+    for (const armor of ["helmet", "chestplate", "leggings", "boots"]) {
+      event.hide(`minecraft:${material}_${armor}`) 
+    }
+  }
+
 	// wood blocks
 	global.tfcWoodType.forEach(wood => {
     if (wood.replaced == true) {
