@@ -29,16 +29,12 @@ const polishRecipes = [
 
 onEvent('recipes', event => {
   // stone anvil
-  event.shapeless("tfc:rock/anvil/granite", ["#forge:stone", "#tfc:hammers"])
-    .damageIngredient(1)
+  event.recipes.tfc.damage_inputs_shapeless_crafting("tfc:rock/anvil/granite", ["#forge:stone", "#tfc:hammers"])
 
   // bricks
-  event.shapeless("kubejs:brick/stone", ["rocks:cobblestone_splitter", "#tfc:chisels"])
-    .damageIngredient(1)
-  event.shapeless("4x kubejs:brick/stone", ["minecraft:cobblestone", "#tfc:chisels"])
-    .damageIngredient(1)
-  event.shapeless("4x kubejs:brick/deepslate", ["minecraft:cobbled_deepslate", "#tfc:chisels"])
-    .damageIngredient(1)
+  event.recipes.tfc.damage_inputs_shapeless_crafting("kubejs:brick/stone", ["rocks:cobblestone_splitter", "#tfc:chisels"])
+  event.recipes.tfc.damage_inputs_shapeless_crafting("4x kubejs:brick/stone", ["minecraft:cobblestone", "#tfc:chisels"])
+  event.recipes.tfc.damage_inputs_shapeless_crafting("4x kubejs:brick/deepslate", ["minecraft:cobbled_deepslate", "#tfc:chisels"])
   event.remove({output: "minecraft:stone_bricks"})
   event.remove({output: "minecraft:deepslate_bricks"})
   event.shaped("4x minecraft:stone_bricks", [
@@ -66,8 +62,7 @@ onEvent('recipes', event => {
   // smooth stones
   polishRecipes.forEach(rockPair => {
     event.remove({output: `${rockPair[1]}`})
-    event.shapeless(`${rockPair[1]}`, [`${rockPair[0]}`, "#tfc:chisels"])
-      .damageIngredient(1)
+    event.recipes.tfc.damage_inputs_shapeless_crafting(`${rockPair[1]}`, [`${rockPair[0]}`, "#tfc:chisels"])
     event.recipes.tfc.chisel(`${rockPair[1]}`, `${rockPair[0]}`, 'smooth')
   })
 })
