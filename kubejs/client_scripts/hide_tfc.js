@@ -24,12 +24,10 @@ onEvent('jei.hide.items', event => {
 	// tfc stone blocks
 	global.tfcRockType.forEach(rock => {
 		global.tfcRockBlocks.forEach(type => {
+			// keep granite anvil
 			let item = `tfc:rock/${type}/${rock}`
-			let isIgnored = false
-			global.keepTfcRockBlocks.forEach(ignore => {
-				if (item == ignore) isIgnored = true
-			})
-			if (!isIgnored) event.hide(item)
+			if (item != "tfc:rock/anvil/granite") event.hide(item)
+			// others
 			event.hide(`tfc:rock/${type}/${rock}_slab`)
 			event.hide(`tfc:rock/${type}/${rock}_stairs`)
 			event.hide(`tfc:rock/${type}/${rock}_wall`)
