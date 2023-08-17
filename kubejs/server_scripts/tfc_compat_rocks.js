@@ -2,7 +2,20 @@
 
 console.info('Stone compat recipes registering...')
 
-const polishableRocks = [
+const rocks = [
+  "rocks:rock",
+  "rocks:granite_rock",
+  "rocks:diorite_rock",
+  "rocks:andesite_rock",
+  "rocks:sand_rock",
+  "rocks:red_sand_rock",
+  "rocks:gravel_rock",
+  "rocks:end_stone_rock",
+  "rocks:netherrack_rock",
+  "rocks:soul_soil_rock"
+]
+
+const polishRecipes = [
   ["minecraft:stone", "minecraft:smooth_stone"],
   ["minecraft:granite", "minecraft:polished_granite"],
   ["minecraft:diorite", "minecraft:polished_diorite"],
@@ -52,7 +65,7 @@ onEvent('recipes', event => {
   event.remove({id: "minecraft:andesite"})
 
   // smooth stones
-  polishableRocks.forEach(rockPair => {
+  polishRecipes.forEach(rockPair => {
     event.remove({output: `${rockPair[1]}`})
     event.shapeless(`${rockPair[1]}`, [`${rockPair[0]}`, "#tfc:chisels"])
       .damageIngredient(1)
@@ -62,23 +75,11 @@ onEvent('recipes', event => {
 
 onEvent('tags.items', event => {
   // rocks
-  const rocks = [
-    "rocks:rock",
-    "rocks:granite_rock",
-    "rocks:diorite_rock",
-    "rocks:andesite_rock",
-    "rocks:sand_rock",
-    "rocks:red_sand_rock",
-    "rocks:gravel_rock",
-    "rocks:end_stone_rock",
-    "rocks:netherrack_rock",
-    "rocks:soul_soil_rock"
-  ]
   event.add("tfc:rock_knapping", rocks)
   event.add("tfc:igneous_extrusive_rock", rocks)
   
   // smooth stones
-  polishableRocks.forEach(rockPair => {
+  polishRecipes.forEach(rockPair => {
     event.add("forge:smooth_stone", `${rockPair[1]}`)
   })
 
