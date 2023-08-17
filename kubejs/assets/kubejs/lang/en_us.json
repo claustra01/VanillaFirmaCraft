@@ -862,5 +862,7 @@
   "block.kubejs.ore.certus_quartz.blackstone": "Blackstone Certus Quartz",
   "block.kubejs.ore.certus_quartz.blackstone.prospected": "Certus Quartz",
   "block.kubejs.ore.certus_quartz.endstone": "Endstone Certus Quartz",
-  "block.kubejs.ore.certus_quartz.endstone.prospected": "Certus Quartz"
+  "block.kubejs.ore.certus_quartz.endstone.prospected": "Certus Quartz",
+  "item.kubejs.brick.stone": "Stone Brick",
+  "item.kubejs.brick.deepslate": "Deepslate Brick"
 }
