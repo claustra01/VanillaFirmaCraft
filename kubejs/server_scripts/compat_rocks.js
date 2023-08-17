@@ -41,6 +41,12 @@ onEvent('recipes', event => {
     "B": "kubejs:brick/deepslate",
     "M": "#tfc:mortar"
   })
+
+  // raw stones
+  event.remove({id: "minecraft:granite"})
+  event.remove({id: "minecraft:diorite"})
+  event.remove({id: "minecraft:andesite"})
+
   // smooth stones
   polishableRocks.forEach(rockPair => {
     event.remove({output: `${rockPair[1]}`})
@@ -66,6 +72,7 @@ onEvent('tags.items', event => {
   ]
   event.add("tfc:rock_knapping", rocks)
   event.add("tfc:igneous_extrusive_rock", rocks)
+  
   // smooth stones
   polishableRocks.forEach(rockPair => {
     event.add("forge:smooth_stone", `${rockPair[1]}`)
