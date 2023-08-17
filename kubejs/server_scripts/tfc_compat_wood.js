@@ -4,6 +4,9 @@ console.info('Wood compat recipes registering...')
 
 onEvent('recipes', event => {
 	global.tfcWoodType.forEach(wood => {
+    // no tree punching flint axe
+    event.remove({output: "notreepunching:flint_hatchet"})
+
   	// remove vanilla recipes
     if (wood.replaced) {
       event.remove({output: `minecraft:${wood.vanilla}_planks`})
@@ -18,6 +21,7 @@ onEvent('recipes', event => {
       event.remove({output: `minecraft:${wood.vanilla}_trapdoor`})
       event.remove({output: `minecraft:${wood.vanilla}_fence_gate`})
       event.remove({output: `minecraft:${wood.vanilla}_boat`})
+      
       // replace tfc-style recipes
       event.remove({output: `tfc:wood/planks/${wood.name}_log_fence`})
       event.remove({output: `firmalife:wood/jarbnet/${wood.name}`})
