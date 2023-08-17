@@ -77,4 +77,7 @@ onEvent('tags.items', event => {
   polishableRocks.forEach(rockPair => {
     event.add("forge:smooth_stone", `${rockPair[1]}`)
   })
+
+  // flux
+  event.add("tfc:fluxstone", ["minecraft:calcite", "rocks:seashell"])
 })
