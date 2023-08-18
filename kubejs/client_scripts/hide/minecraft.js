@@ -31,4 +31,18 @@ onEvent('jei.hide.items', event => {
       event.hide(`minecraft:${wood.vanilla}_boat`)
     }
 	})
+
+  // meats
+  const hideMeats = [
+    "beef",
+    "porkchop",
+    "chicken",
+    "mutton",
+    "rabbit"  
+  ]
+  hideMeats.forEach(meat => {
+    event.hide(`minecraft:${meat}`)
+    event.hide(`minecraft:cooked_${meat}`)
+  })
+
 })
