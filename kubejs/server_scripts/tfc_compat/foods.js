@@ -106,17 +106,17 @@ onEvent('server.datapack.first', event => {
     event.saturation(0)
     event.decayModifier(2)
   })
-  event.addTFCFoodItem("kubejs:food/grain", event => {
+  event.addTFCFoodItem("kubejs:food/wheat_grain", event => {
     event.hunger(4)
     event.saturation(0)
     event.decayModifier(0.25)
   })
-  event.addTFCFoodItem("kubejs:food/flour", event => {
+  event.addTFCFoodItem("kubejs:food/wheat_flour", event => {
     event.hunger(4)
     event.saturation(0)
     event.decayModifier(0.5)
   })
-  event.addTFCFoodItem("kubejs:food/dough", event => {
+  event.addTFCFoodItem("kubejs:food/wheat_dough", event => {
     event.hunger(4)
     event.saturation(0)
     event.decayModifier(3)
@@ -141,11 +141,11 @@ onEvent('recipes', event => {
   event.remove({output: "minecraft:cake"})
   event.remove({output: "minecraft:cookie"})
   event.recipes.tfc.extra_products_shapeless_crafting("4x tfc:straw", 
-    event.recipes.tfc.damage_inputs_shapeless_crafting("kubejs:food/grain", ["minecraft:wheat", "#tfc:knives"])
+    event.recipes.tfc.damage_inputs_shapeless_crafting("kubejs:food/wheat_grain", ["minecraft:wheat", "#tfc:knives"])
   )
-  event.recipes.tfc.quern("kubejs:food/flour", "kubejs:food/grain")
-  doughRecipe(event, "kubejs:food/dough", "kubejs:food/flour")
-  event.recipes.firmalife.oven("minecraft:bread", "kubejs:food/dough", 1000, 200);
+  event.recipes.tfc.quern("kubejs:food/wheat_flour", "kubejs:food/wheat_grain")
+  doughRecipe(event, "kubejs:food/wheat_dough", "kubejs:food/wheat_flour")
+  event.recipes.firmalife.oven("minecraft:bread", "kubejs:food/wheat_dough", 1000, 200);
 
 })
 
@@ -174,13 +174,13 @@ onEvent('tags.items', event => {
 
   // grain
   event.add("tfc:foods", "minecraft:wheat")
-  event.add("tfc:foods", "kubejs:food/grain")
-  event.add("tfc:foods", "kubejs:food/flour")
-  event.add("tfc:foods", "kubejs:food/dough")
+  event.add("tfc:foods", "kubejs:food/wheat_grain")
+  event.add("tfc:foods", "kubejs:food/wheat_flour")
+  event.add("tfc:foods", "kubejs:food/wheat_dough")
   event.add("tfc:foods", "minecraft:bread")
-  event.add("tfc:foods/grains", "kubejs:food/grain")
-  event.add("tfc:foods/flour", "kubejs:food/flour")
-  event.add("tfc:foods/dough", "kubejs:food/dough")
+  event.add("tfc:foods/grains", "kubejs:food/wheat_grain")
+  event.add("tfc:foods/flour", "kubejs:food/wheat_flour")
+  event.add("tfc:foods/dough", "kubejs:food/wheat_dough")
   event.add("tfc:foods/breads", "minecraft:bread")
 
 })

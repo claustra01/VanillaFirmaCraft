@@ -864,5 +864,8 @@
   "block.kubejs.ore.certus_quartz.endstone": "Endstone Certus Quartz",
   "block.kubejs.ore.certus_quartz.endstone.prospected": "Certus Quartz",
   "item.kubejs.brick.stone": "Stone Brick",
-  "item.kubejs.brick.deepslate": "Deepslate Brick"
+  "item.kubejs.brick.deepslate": "Deepslate Brick",
+  "item.kubejs.food.wheat_grain": "Wheat Grain",
+  "item.kubejs.food.wheat_flour": "Wheat Flour",
+  "item.kubejs.food.wheat_dough": "Wheat Dough"
 }
