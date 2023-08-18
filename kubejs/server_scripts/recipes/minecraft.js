@@ -1,4 +1,9 @@
 onEvent('recipes', event => {
+  // remove furnace and etc
+  global.vanillaTileEntities.forEach(tile => {
+    event.remove({output: tile})
+  })
+
   // remove vanilla tools
   for (const material of ["wooden", "stone", "iron", "diamond", "netherite", "golden"]) {
     for (const tool of ["shovel", "pickaxe", "axe", "hoe", "sword"]) {

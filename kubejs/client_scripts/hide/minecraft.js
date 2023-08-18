@@ -3,6 +3,11 @@
 console.info('JEI item hiding...')
 
 onEvent('jei.hide.items', event => {
+  // remove furnace and etc
+  global.vanillaTileEntities.forEach(tile => {
+    event.hide(tile)
+  })
+
   // remove vanilla tools
   for (const material of ["wooden", "stone", "iron", "diamond", "netherite", "golden"]) {
     for (const tool of ["shovel", "pickaxe", "axe", "hoe", "sword"]) {
