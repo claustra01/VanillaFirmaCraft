@@ -32,6 +32,9 @@ JEIEvents.hideItems(event => {
 				event.hide(`tfc:rock/${type}/${rock.name}_slab`)
 				event.hide(`tfc:rock/${type}/${rock.name}_stairs`)
 				event.hide(`tfc:rock/${type}/${rock.name}_wall`)
+				event.hide(`tfc:rock/raw/${rock.name}_slab`)
+				event.hide(`tfc:rock/raw/${rock.name}_stairs`)
+				event.hide(`tfc:rock/raw/${rock.name}_wall`)
 				event.hide(`tfc:brick/${rock.name}`)
 			})
 		}

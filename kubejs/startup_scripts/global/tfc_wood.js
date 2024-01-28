@@ -27,7 +27,8 @@ global.tfcWoodType = [
   },
   {
     "name": "douglas_fir",
-    "replace": false
+    "vanilla": "cherry",
+    "replace": true
   },
   {
     "name": "hickory",
@@ -40,7 +41,8 @@ global.tfcWoodType = [
   },
   {
     "name": "mangrove",
-    "replace": false
+    "vanilla": "mangrove",
+    "replace": true
   },
   {
     "name": "maple",
