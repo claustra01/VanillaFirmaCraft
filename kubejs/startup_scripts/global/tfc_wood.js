@@ -107,6 +107,15 @@ global.tfcWoodItems = [
   "support",
   "chest_minecart",
   "sign",
+  "hanging_sign/bismuth_bronze",
+  "hanging_sign/black_bronze",
+  "hanging_sign/bronze",
+  "hanging_sign/copper",
+  "hanging_sign/wrought_iron",
+  "hanging_sign/steel",
+  "hanging_sign/black_steel",
+  "hanging_sign/blue_steel",
+  "hanging_sign/red_steel"
 ]
 
 global.tfcWoodBlocks = [
