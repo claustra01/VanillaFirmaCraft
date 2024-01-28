@@ -1,7 +1,9 @@
 global.vanillaTileEntities = [
-  "minecraft:crafting_table",
+  // "minecraft:crafting_table",
   "minecraft:furnace",
   "minecraft:chest",
+  "minecraft:trapped_chest",
+  "minecraft:chest_minecart",
   "minecraft:loom",
   "minecraft:composter",
   "minecraft:barrel",

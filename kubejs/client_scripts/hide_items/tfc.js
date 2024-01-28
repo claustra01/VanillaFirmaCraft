@@ -26,7 +26,7 @@ JEIEvents.hideItems(event => {
 		event.hide(`tfc:rock/gravel/${rock.name}`)
 		event.hide(`tfc:rock/mossy_loose/${rock.name}`)
 		// disabled
-		if (rock.replace == false) {
+		if (rock.replace === false) {
 			global.tfcRockBlocks.forEach(type => {
 				event.hide(`tfc:rock/${type}/${rock.name}`)
 				event.hide(`tfc:rock/${type}/${rock.name}_slab`)
@@ -52,7 +52,7 @@ JEIEvents.hideItems(event => {
 		event.hide(`tfc:wood/twig/${wood.name}`)
 		event.hide(`tfc:wood/fallen_leaves/${wood.name}`)
 		// disabled
-		if (wood.replace == false) {
+		if (wood.replace === false) {
 			global.tfcWoodItems.forEach(type => {
 				event.hide(`tfc:wood/${type}/${wood.name}`)
 			})
