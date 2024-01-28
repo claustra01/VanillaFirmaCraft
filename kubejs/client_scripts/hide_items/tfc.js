@@ -82,4 +82,9 @@ JEIEvents.hideItems(event => {
 		})
 	})
 
+	// tfc and firmalife plants
+	global.tfcPlants.forEach(plant => {
+		event.hide(`${plant}`)
+	})
+
 })
