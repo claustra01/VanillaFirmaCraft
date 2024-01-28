@@ -11,8 +11,7 @@ global.tfcRockType = [
   },
   {
     "name": "gabbro",
-    "vanilla": "deepslate",
-    "replace": true
+    "replace": false
   },
   {
     "name": "shale",

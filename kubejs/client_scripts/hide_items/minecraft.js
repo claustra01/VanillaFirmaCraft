@@ -35,18 +35,10 @@ JEIEvents.hideItems(event => {
     event.hide(`minecraft:mossy_cobblestone_${type}`)
     event.hide(`minecraft:stone_brick_${type}`)
     event.hide(`minecraft:mossy_stone_brick_${type}`)
-    event.hide(`minecraft:deepslate_${type}`)
-    event.hide(`minecraft:cobbled_deepslate_${type}`)
-    event.hide(`minecraft:deepslate_brick_${type}`)
-    event.hide(`minecraft:deepslate_tile_${type}`)
   }
   event.hide(`minecraft:stone_bricks`)
   event.hide(`minecraft:cracked_stone_bricks`)
   event.hide(`minecraft:chiseled_stone_bricks`)
-  event.hide(`minecraft:deepslate_bricks`)
-  event.hide(`minecraft:cracked_deepslate_bricks`)
-  event.hide(`minecraft:deepslate_tiles`)
-  event.hide(`minecraft:cracked_deepslate_tiles`)
 
   // wood blocks
 	global.tfcWoodType.forEach(wood => {
