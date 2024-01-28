@@ -23,6 +23,8 @@ JEIEvents.hideItems(event => {
 	global.tfcRockType.forEach(rock => {
 		// replaced
 		event.hide(`tfc:rock/raw/${rock.name}`)
+		event.hide(`tfc:rock/gravel/${rock.name}`)
+		event.hide(`tfc:rock/mossy_loose/${rock.name}`)
 		// disabled
 		if (rock.replace == false) {
 			global.tfcRockBlocks.forEach(type => {
