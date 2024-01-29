@@ -22,10 +22,11 @@ JEIEvents.hideItems(event => {
   // stone blocks
   global.tfcRockType.forEach(rock => {
     if (rock.replace === true) {
+      event.hide(`minecraft:${rock.vanilla}`)
       event.hide(`minecraft:${rock.vanilla}_stairs`)
       event.hide(`minecraft:${rock.vanilla}_slab`)
       event.hide(`minecraft:${rock.vanilla}_wall`)
-      event.hide(`minecraft:polished${rock.vanilla}`)
+      event.hide(`minecraft:polished_${rock.vanilla}`)
       event.hide(`minecraft:polished_${rock.vanilla}_stairs`)
       event.hide(`minecraft:polished_${rock.vanilla}_slab`)
     }
@@ -36,9 +37,24 @@ JEIEvents.hideItems(event => {
     event.hide(`minecraft:stone_brick_${type}`)
     event.hide(`minecraft:mossy_stone_brick_${type}`)
   }
+  event.hide(`minecraft:cobblestone`)
+  event.hide(`minecraft:mossy_cobblestone`)
   event.hide(`minecraft:stone_bricks`)
+  event.hide(`minecraft:mossy_stone_bricks`)
   event.hide(`minecraft:cracked_stone_bricks`)
   event.hide(`minecraft:chiseled_stone_bricks`)
+
+  event.hide("minecraft:stone_button")
+  event.hide("minecraft:stone_pressure_plate")
+  
+  // infused stone blocks
+  event.hide("minecraft:infested_stone")
+  event.hide("minecraft:infested_cobblestone")
+  event.hide(`minecraft:infested_stone_bricks`)
+  event.hide(`minecraft:infested_mossy_stone_bricks`)
+  event.hide(`minecraft:infested_cracked_stone_bricks`)
+  event.hide(`minecraft:infested_chiseled_stone_bricks`)
+  event.hide("minecraft:infested_deepslate")
 
   // wood blocks
 	global.tfcWoodType.forEach(wood => {
