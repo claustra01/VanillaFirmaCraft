@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
       event.replaceInput(
         { input: `tfc:wood/log/${wood.name}` },
         `tfc:wood/log/${wood.name}`,
-        `minecraft:${wood.name}_log`
+        `minecraft:${wood.vanilla}_log`
       )
       // remove recipes
       event.remove({output: `tfc:wood/wood/${wood.vanilla}`})
@@ -19,9 +19,9 @@ ServerEvents.recipes(event => {
 ServerEvents.tags('item', event => {
   global.tfcWoodType.forEach(wood => {
     // add tfc log tags
-    event.add(`tfc:${wood.name}_logs`, `minecraft:${wood.name}_log`)
-    event.add(`tfc:${wood.name}_logs`, `minecraft:${wood.name}_wood`)
-    event.add(`tfc:${wood.name}_logs`, `minecraft:stripped_${wood.name}_log`)
-    event.add(`tfc:${wood.name}_logs`, `minecraft:stripped_${wood.name}_wood`)
+    event.add(`tfc:${wood.name}_logs`, `minecraft:${wood.vanilla}_log`)
+    event.add(`tfc:${wood.name}_logs`, `minecraft:${wood.vanilla}_wood`)
+    event.add(`tfc:${wood.name}_logs`, `minecraft:stripped_${wood.vanilla}_log`)
+    event.add(`tfc:${wood.name}_logs`, `minecraft:stripped_${wood.vanilla}_wood`)
   })
 })
