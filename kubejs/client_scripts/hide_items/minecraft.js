@@ -48,6 +48,7 @@ JEIEvents.hideItems(event => {
       event.hide(`minecraft:${wood.vanilla}_stairs`)
       event.hide(`minecraft:${wood.vanilla}_fence`)
       event.hide(`minecraft:${wood.vanilla}_sign`)
+      event.hide(`minecraft:${wood.vanilla}_hanging_sign`)
       event.hide(`minecraft:${wood.vanilla}_button`)
       event.hide(`minecraft:${wood.vanilla}_pressure_plate`)
       event.hide(`minecraft:${wood.vanilla}_door`)
