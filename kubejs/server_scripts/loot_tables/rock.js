@@ -5,6 +5,10 @@ LootJS.modifiers((event) => {
     .removeLoot(Ingredient.all)
     .addWeightedLoot([1, 4], "tfc:rock/loose/dacite")
   event
+    .addBlockLootModifier("minecraft:stone_slab")
+    .removeLoot(Ingredient.all)
+    .addWeightedLoot([1, 2], "tfc:rock/loose/dacite")
+  event
     .addBlockLootModifier("minecraft:cobblestone")
     .removeLoot(Ingredient.all)
     .addLoot("tfc:rock/cobble/dacite")
