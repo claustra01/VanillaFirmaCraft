@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         `minecraft:${wood.vanilla}_log`
       )
       // remove recipes
-      event.remove({output: `tfc:wood/wood/${wood.vanilla}`})
+      event.remove({output: `tfc:wood/wood/${wood.name}`})
       event.remove({output: `minecraft:${wood.vanilla}_planks`})
       event.remove({output: `minecraft:${wood.vanilla}_hanging_sign`})
     }
