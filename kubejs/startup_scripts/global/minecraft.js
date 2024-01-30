@@ -1,3 +1,21 @@
+global.vanillaWoodBlocks = [
+  "log",
+  "wood",
+  "planks",
+  "slab",
+  "stairs",
+  "fence",
+  "sign",
+  "hanging_sign",
+  "button",
+  "pressure_plate",
+  "door",
+  "trapdoor",
+  "fence_gate",
+  "boat",
+  "chest_boat"
+]
+
 global.vanillaTileEntities = [
   // "minecraft:crafting_table",
   "minecraft:furnace",

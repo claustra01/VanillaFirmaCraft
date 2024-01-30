@@ -43,10 +43,6 @@ JEIEvents.hideItems(event => {
 	// tfc wood items
 	global.tfcWoodType.forEach(wood => {
 		// replaced
-		event.hide(`tfc:wood/log/${wood.name}`)
-		event.hide(`tfc:wood/stripped_log/${wood.name}`)
-		event.hide(`tfc:wood/wood/${wood.name}`)
-		event.hide(`tfc:wood/stripped_wood/${wood.name}`)
 		event.hide(`tfc:wood/leaves/${wood.name}`)
 		event.hide(`tfc:wood/sapling/${wood.name}`)
 		event.hide(`tfc:wood/twig/${wood.name}`)
