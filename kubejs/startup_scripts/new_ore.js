@@ -1,6 +1,6 @@
 StartupEvents.registry("block", (event) => {
 
-	// tfc-style ores
+	// custom tfc-style ores
 	global.vanillaEnableRockType.forEach(rock => {
 		global.tfcOreType.forEach(ore => {
 			// register block
