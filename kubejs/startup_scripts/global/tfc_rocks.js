@@ -90,6 +90,7 @@ global.tfcRockType = [
 global.tfcRockBlocks = [
   'magma',
   'hardened',
+  'raw',
   'pressure_plate',
   'button',
   'spike',
