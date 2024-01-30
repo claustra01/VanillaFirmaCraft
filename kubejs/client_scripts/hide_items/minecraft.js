@@ -93,4 +93,19 @@ JEIEvents.hideItems(event => {
   event.hide("minecraft:tropical_fish")
   event.hide("minecraft:pufferfish")
 
+  // other foods
+  event.hide("minecraft:golden_apple")
+  event.hide("minecraft:enchanted_golden_apple")
+  event.hide("minecraft:golden_carrot")
+  event.hide("minecraft:baked_potato")
+  event.hide("minecraft:dried_kelp")
+  event.hide("minecraft:bread")
+  event.hide("minecraft:cookie")
+  event.hide("minecraft:cake")
+
+  event.hide("minecraft:mushroom_stew")
+  event.hide("minecraft:beetroot_soup")
+  event.hide("minecraft:rabbit_stew")
+  event.hide("minecraft:suspicious_stew")
+
 })
