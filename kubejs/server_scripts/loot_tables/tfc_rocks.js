@@ -1,51 +1,51 @@
 LootJS.modifiers((event) => {
   // stone
   event
-    .addBlockLootModifier("minecraft:stone")
+    .addBlockLootModifier('minecraft:stone')
     .removeLoot(Ingredient.all)
-    .addWeightedLoot([1, 4], "tfc:rock/loose/dacite")
+    .addWeightedLoot([1, 4], 'tfc:rock/loose/dacite');
   event
-    .addBlockLootModifier("minecraft:stone_slab")
+    .addBlockLootModifier('minecraft:stone_slab')
     .removeLoot(Ingredient.all)
-    .addWeightedLoot([1, 2], "tfc:rock/loose/dacite")
+    .addWeightedLoot([1, 2], 'tfc:rock/loose/dacite');
   event
-    .addBlockLootModifier("minecraft:cobblestone")
+    .addBlockLootModifier('minecraft:cobblestone')
     .removeLoot(Ingredient.all)
-    .addLoot("tfc:rock/cobble/dacite")
+    .addLoot('tfc:rock/cobble/dacite');
   event
-    .addBlockLootModifier("minecraft:mossy_cobblestone")
+    .addBlockLootModifier('minecraft:mossy_cobblestone')
     .removeLoot(Ingredient.all)
-    .addLoot("tfc:rock/mossy_cobble/dacite")
+    .addLoot('tfc:rock/mossy_cobble/dacite');
 
   // granite
   event
-    .addBlockLootModifier("minecraft:granite")
+    .addBlockLootModifier('minecraft:granite')
     .removeLoot(Ingredient.all)
-    .addWeightedLoot([1, 4], "tfc:rock/loose/granite")
+    .addWeightedLoot([1, 4], 'tfc:rock/loose/granite');
   // diorite
   event
-    .addBlockLootModifier("minecraft:diorite")
+    .addBlockLootModifier('minecraft:diorite')
     .removeLoot(Ingredient.all)
-    .addWeightedLoot([1, 4], "tfc:rock/loose/diorite")
+    .addWeightedLoot([1, 4], 'tfc:rock/loose/diorite');
   // andesite
   event
-    .addBlockLootModifier("minecraft:andesite")
+    .addBlockLootModifier('minecraft:andesite')
     .removeLoot(Ingredient.all)
-    .addWeightedLoot([1, 4], "tfc:rock/loose/andesite")
+    .addWeightedLoot([1, 4], 'tfc:rock/loose/andesite');
 
   // basalt
   event
-    .addBlockLootModifier("minecraft:basalt")
+    .addBlockLootModifier('minecraft:basalt')
     .removeLoot(Ingredient.all)
-    .addWeightedLoot([1, 4], "tfc:rock/loose/basalt")
+    .addWeightedLoot([1, 4], 'tfc:rock/loose/basalt');
   event
-    .addBlockLootModifier("minecraft:smooth_basalt")
+    .addBlockLootModifier('minecraft:smooth_basalt')
     .removeLoot(Ingredient.all)
-    .addWeightedLoot([1, 4], "tfc:rock/loose/basalt")
+    .addWeightedLoot([1, 4], 'tfc:rock/loose/basalt');
 
   // calcite
   event
-    .addBlockLootModifier("minecraft:calcite")
+    .addBlockLootModifier('minecraft:calcite')
     .removeLoot(Ingredient.all)
-    .addWeightedLoot([1, 4], "tfc:rock/loose/chalk")
-})
+    .addWeightedLoot([1, 4], 'tfc:rock/loose/chalk');
+});
