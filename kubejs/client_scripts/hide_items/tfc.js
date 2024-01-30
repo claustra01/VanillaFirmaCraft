@@ -90,4 +90,11 @@ JEIEvents.hideItems(event => {
 		event.hide(`${plant}`)
 	})
 
+	// custom tfc-style ores
+	global.tfcOreType.forEach(ore => {
+		global.vanillaEnableRockType.forEach(rock => {
+			event.hide(`kubejs:ore/${ore.name}/${rock.name}`)
+		})
+	})
+
 })
