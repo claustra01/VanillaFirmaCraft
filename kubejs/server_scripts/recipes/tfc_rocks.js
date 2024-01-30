@@ -1,15 +1,3 @@
-const splitters = [
-  "rocks:cobblestone_splitter",
-  "rocks:granite_splitter",
-  "rocks:diorite_splitter",
-  "rocks:andesite_splitter",
-  "rocks:sandstone_splitter",
-  "rocks:red_sandstone_splitter",
-  "rocks:end_stone_splitter",
-  "rocks:netherrack_splitter",
-  "rocks:soul_soil_splitter"
-]
-
 ServerEvents.recipes(event => {
 
   // cobblestone
@@ -49,6 +37,17 @@ ServerEvents.recipes(event => {
 ServerEvents.tags('item', event => {
   
   // rock splitters
+  const splitters = [
+    "rocks:cobblestone_splitter",
+    "rocks:granite_splitter",
+    "rocks:diorite_splitter",
+    "rocks:andesite_splitter",
+    "rocks:sandstone_splitter",
+    "rocks:red_sandstone_splitter",
+    "rocks:end_stone_splitter",
+    "rocks:netherrack_splitter",
+    "rocks:soul_soil_splitter"
+  ]
   event.add("tfc:any_knapping", splitters)
   event.add("tfc:rock_knapping", splitters)
 
