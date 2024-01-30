@@ -16,7 +16,7 @@ global.vanillaTileEntities = [
   "minecraft:stonecutter"
 ]
 
-global.vanillaEnableRockTypes = [
+global.vanillaEnableRockType = [
   // overworld
   {
     "name": "deepslate",

@@ -1,8 +1,8 @@
 StartupEvents.registry("block", (event) => {
 
 	// tfc-style ores
-	global.tfcOreType.forEach(ore => {
-		global.vanillaEnableRockTypes.forEach(rock => {
+	global.vanillaEnableRockType.forEach(rock => {
+		global.tfcOreType.forEach(ore => {
 			// register block
 			event.create(`ore/${ore.name}/${rock.name}`)
 				.material("stone")
