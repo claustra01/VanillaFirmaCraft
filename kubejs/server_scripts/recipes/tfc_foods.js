@@ -19,6 +19,9 @@ ServerEvents.recipes((event) => {
     )
   );
 
+  // melon
+  event.shapeless('minecraft:melon_seeds', ['tfc:food/melon_slice']);
+
   // beekeeping
   event.remove('minecraft:beehive');
   event.remove('minecraft:honey_bottle');
@@ -53,6 +56,9 @@ ServerEvents.tags('item', (event) => {
 
   // grains
   event.add('tfc:foods', 'minecraft:wheat');
+
+  // seeds
+  event.add('tfc:seeds', ['minecraft:wheat_seeds', 'minecraft:pumpkin_seeds', 'minecraft:melon_seeds', 'minecraft:beetroot_seeds']);
 
   // honey
   event.add('tfc:sweetener', 'minecraft:honeycomb');
