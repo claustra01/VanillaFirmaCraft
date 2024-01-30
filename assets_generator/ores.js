@@ -527,8 +527,8 @@ const capitalize = (str) => {
 }
 tfcOreType.forEach(ore => {
   vanillaEnableRockType.forEach(rock => {
-    langData += `"block.kubejs.ore.${ore.name}.${rock.name}": "${capitalize(rock.name)} ${capitalize(ore.name)}",\n`
-    langData += `"block.kubejs.ore.${ore.name}.${rock.name}.prospected": "${capitalize(ore.name)}",\n`
+    langData += `"block.kubejs.ore.${ore.name}.${rock.name}": "Normal ${capitalize(rock.name)} ${capitalize(ore.name)}",\n`
+    langData += `"block.kubejs.ore.${ore.name}.${rock.name}.prospected": "Normal ${capitalize(ore.name)}",\n`
   })
 })
 fs.writeFile('./export.txt', langData, (err) => {
