@@ -109,4 +109,6 @@ JEIEvents.hideItems(event => {
   event.hide("minecraft:rabbit_stew")
   event.hide("minecraft:suspicious_stew")
 
+  event.hide("minecraft:honey_bottle")
+
 })

@@ -14,6 +14,30 @@ ServerEvents.recipes(event => {
     )
   )
 
+  // beekeeping
+  event.remove("minecraft:beehive")
+  event.remove("minecraft:honey_bottle")
+  event.remove({ output: "firmalife:beehive" })
+  event.shaped('minecraft:beehive', [
+    'LFL', 
+    'LTL',
+    'LFL'  
+  ], {
+    L: '#tfc:lumber', 
+    F: 'firmalife:beehive_frame',
+    T: 'tfc:thatch'   
+  })
+  event.replaceInput(
+    { input: "firmalife:raw_honey" },
+    "firmalife:raw_honey",
+    "minecraft:honeycomb"
+  )
+  event.replaceInput(
+    { input: "minecraft:honey_bottle" },
+    "minecraft:honey_bottle",
+    "firmalife:jar/honey"
+  )
+
 })
 
 ServerEvents.tags('item', event => {
@@ -38,5 +62,8 @@ ServerEvents.tags('item', event => {
 
   // grains
   event.add("tfc:foods", "minecraft:wheat")
+
+  // honey
+  event.add("tfc:sweetener", "minecraft:honeycomb")
   
 })
