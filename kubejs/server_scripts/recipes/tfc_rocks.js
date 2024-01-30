@@ -60,8 +60,7 @@ ServerEvents.recipes((event) => {
   // raw stones
   global.tfcRockType.forEach(rock => {
     if (rock.replace) {
-      event.recipes.tfc.heating(`tfc:rock/cobble/${rock.name}`, 3000)
-        .resultItem(`tfc:rock/raw/${rock.name}`);
+      event.recipes.tfc.heating(`tfc:rock/cobble/${rock.name}`, 1399).resultItem(`tfc:rock/raw/${rock.name}`);
     }
   })
 });
