@@ -1,3 +1,5 @@
+console.info('Tweak TFC wood drops...');
+
 LootJS.modifiers((event) => {
   global.tfcWoodType.forEach((wood) => {
     if (wood.replace === true) {

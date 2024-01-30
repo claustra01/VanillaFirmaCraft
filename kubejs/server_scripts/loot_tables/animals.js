@@ -1,3 +1,5 @@
+console.info('Tweak animal drops...');
+
 LootJS.modifiers((event) => {
   // camel
   event

@@ -1,4 +1,4 @@
-console.info('Hide JEI Categories...');
+console.info('Hide JEI categories...');
 
 JEIEvents.removeCategories((event) => {
   event.remove('minecraft:blasting');

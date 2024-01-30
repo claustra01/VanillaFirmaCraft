@@ -1,3 +1,5 @@
+console.info('Tweak TFC food recipes...');
+
 ServerEvents.recipes((event) => {
   // hidden foods
   event.remove('minecraft:golden_apple');

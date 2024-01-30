@@ -1,3 +1,5 @@
+console.info('Tweak TFC ore drops...');
+
 LootJS.modifiers((event) => {
   // custom tfc-style ores
   global.tfcOreType.forEach((ore) => {

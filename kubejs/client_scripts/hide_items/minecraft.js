@@ -1,4 +1,4 @@
-console.info('Hide Vanilla items...');
+console.info('Hide vanilla items...');
 
 JEIEvents.hideItems((event) => {
   // tile entities

@@ -1,3 +1,5 @@
+console.info('Add TFC food parameters...');
+
 TFCEvents.data((event) => {
   // apple
   event.foodItem('minecraft:apple', (food) => {

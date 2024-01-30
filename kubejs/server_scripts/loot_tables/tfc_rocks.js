@@ -1,3 +1,5 @@
+console.info('Tweak TFC rock drops...');
+
 LootJS.modifiers((event) => {
   // stone
   event

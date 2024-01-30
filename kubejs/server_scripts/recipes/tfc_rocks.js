@@ -1,3 +1,5 @@
+console.info('Tweak TFC rock recipes...');
+
 ServerEvents.recipes((event) => {
   // cobblestone
   event.remove({ id: 'rocks:cobblestone_from_splitter' });

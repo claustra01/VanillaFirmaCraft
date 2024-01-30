@@ -1,3 +1,5 @@
+console.info('Tweak TFC plant drops...');
+
 LootJS.modifiers((event) => {
   // straw
   event

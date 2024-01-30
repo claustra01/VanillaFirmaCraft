@@ -1,3 +1,5 @@
+console.info('Register new ore blocks...');
+
 StartupEvents.registry('block', (event) => {
   // custom tfc-style ores
   global.vanillaEnableRockType.forEach((rock) => {
