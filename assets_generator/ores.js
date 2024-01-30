@@ -314,6 +314,41 @@ const vanillaEnableRockType = [
   }
 ]
 
+const tfcEnableRockType = [
+  // overworld
+  {
+    "name": "stone",
+    "tfc_name": "dacite",
+    "dimension": "minecraft:overworld",
+    "origin": "minecraft:stone"
+  },
+  {
+    "name": "granite",
+    "tfc_name": "granite",
+    "dimension": "minecraft:overworld",
+    "origin": "minecraft:granite"
+  },
+  {
+    "name": "diorite",
+    "tfc_name": "diorite",
+    "dimension": "minecraft:overworld",
+    "origin": "minecraft:diorite"
+  },
+  {
+    "name": "andesite",
+    "tfc_name": "andesite",
+    "dimension": "minecraft:overworld",
+    "origin": "minecraft:andesite"
+  },
+  // nether
+  {
+    "name": "basalt",
+    "tfc_name": "basalt",
+    "dimension": "minecraft:the_nether",
+    "origin": "minecraft:basalt"
+  }
+]
+
 // generate texture
 tfcOreType.forEach(ore => {
   vanillaEnableRockType.forEach(async rock => {
@@ -346,6 +381,7 @@ tfcOreType.forEach(ore => {
 // generate worldgen config
 tfcOreType.forEach(ore => {
 
+  // custom ore veins
   vanillaEnableRockType.forEach(async rock => {
     let filePath = `../config/adlods/Deposits/_${ore.name}_${rock.name}.cfg`
     let enabled = false
@@ -412,7 +448,75 @@ tfcOreType.forEach(ore => {
       console.log("Config creation successful. Output saved at", filePath)
     })
   })
-  
+
+  // tfc ore veins
+  tfcEnableRockType.forEach(async rock => {
+    let filePath = `../config/adlods/Deposits/_${ore.name}_${rock.name}.cfg`
+    let enabled = false
+    let veinData = [256000, 0, 0, 1, 1]
+    if (ore.veinData[rock.dimension]) {
+      enabled = true
+      veinData = ore.veinData[rock.dimension]
+    }
+    let configData = `
+      Config {
+          B:enabled=${enabled}
+      }
+      Deposit {
+          S:customReplacements <
+          >
+          S:ores <
+              tfc:ore/normal_${ore.name}/${rock.tfc_name}
+          >
+          I:rarity=${veinData[0]}
+          S:replaceableBlocks <
+              ${rock.origin}
+          >
+          Dimensions {
+              S:blackList <
+              >
+              S:whiteList <
+                  ${rock.dimension}
+              >
+          }
+          Biomes {
+              S:blackList <
+              >
+              S:whiteList <
+              >
+          }
+          Altitude {
+              I:max=${veinData[1]}
+              I:min=${veinData[2]}
+          }
+          Miscellaneous {
+              B:exposed=true
+              S:proportions=0.5
+          }
+          Size {
+              I:max=${veinData[3]}
+              I:min=${veinData[4]}
+          }
+          Indicator {
+              S:circles <
+                  ${ore.isGraded ? `
+                      tfc:ore/small_${ore.name}, 3
+                      tfc:ore/small_${ore.name}, 9
+                      tfc:ore/small_${ore.name}, 15
+                  ` : ""}
+              >
+              S:continuity=10.0
+              I:distortion=1
+              S:id=
+          }
+      }
+    `
+    fs.writeFile(filePath, configData, (err) => {
+      if (err) throw err
+      console.log("Config creation successful. Output saved at", filePath)
+    })
+  })
+
 })
 
 // export translation data
