@@ -1,7 +1,7 @@
 const fs = require('fs')
 const Jimp = require('jimp')
 
-const newOreType = [
+const tfcOreType = [
   // tfc graded ores
   // vein: [rarity, maxY, minY, maxSize, minSize]
   {
@@ -280,7 +280,7 @@ const newOreType = [
   },
 ]
 
-const newRockType = [
+const vanillaEnableRockType = [
   // overworld
   {
     "name": "deepslate",
@@ -315,8 +315,8 @@ const newRockType = [
 ]
 
 // generate texture
-newOreType.forEach(ore => {
-  newRockType.forEach(async rock => {
+tfcOreType.forEach(ore => {
+  vanillaEnableRockType.forEach(async rock => {
 
     let oreImage = ore.isGraded ? `./base/ores/normal_${ore.name}.png` : `./base/ores/${ore.name}.png`
     let rockImage = `./base/rocks/${rock.name}.png`
@@ -344,8 +344,9 @@ newOreType.forEach(ore => {
 })
 
 // generate worldgen config
-newOreType.forEach(ore => {
-  newRockType.forEach(async rock => {
+tfcOreType.forEach(ore => {
+
+  vanillaEnableRockType.forEach(async rock => {
     let filePath = `../config/adlods/Deposits/_${ore.name}_${rock.name}.cfg`
     let enabled = false
     let veinData = [256000, 0, 0, 1, 1]
@@ -411,6 +412,7 @@ newOreType.forEach(ore => {
       console.log("Config creation successful. Output saved at", filePath)
     })
   })
+  
 })
 
 // export translation data
@@ -419,8 +421,8 @@ const capitalize = (str) => {
   const words = str.split('_');
   return words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 }
-newOreType.forEach(ore => {
-  newRockType.forEach(rock => {
+tfcOreType.forEach(ore => {
+  vanillaEnableRockType.forEach(rock => {
     langData += `"block.kubejs.ore.${ore.name}.${rock.name}": "${capitalize(rock.name)} ${capitalize(ore.name)}",\n`
     langData += `"block.kubejs.ore.${ore.name}.${rock.name}.prospected": "${capitalize(ore.name)}",\n`
   })
