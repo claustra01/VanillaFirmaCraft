@@ -8,15 +8,6 @@ TFCEvents.data(event => {
     food.fruit(1)
   })
 
-  // melon_slice
-  event.foodItem('minecraft:melon_slice', food => {
-    food.hunger(4)
-    food.saturation(0.2)
-    food.water(5)
-    food.decayModifier(2.5)
-    food.fruit(0.75)
-  })
-
   // sweet_berries
   event.foodItem('minecraft:sweet_berries', food => {
     food.hunger(4)

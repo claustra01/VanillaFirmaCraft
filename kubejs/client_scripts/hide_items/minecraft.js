@@ -96,6 +96,7 @@ JEIEvents.hideItems(event => {
   // other foods
   event.hide("minecraft:golden_apple")
   event.hide("minecraft:enchanted_golden_apple")
+  event.hide("minecraft:melon_slice")
   event.hide("minecraft:golden_carrot")
   event.hide("minecraft:baked_potato")
   event.hide("minecraft:dried_kelp")

@@ -21,7 +21,6 @@ ServerEvents.tags('item', event => {
   // fluits
   const fruits = [
     "apple",
-    "melon_slice",
     "sweet_berries",
     "glow_berries"
   ]
