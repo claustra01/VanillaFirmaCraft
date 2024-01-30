@@ -18,6 +18,7 @@ JEIEvents.hideItems(event => {
       event.hide(`minecraft:${material}_${armor}`) 
     }
   }
+  event.hide("minecraft:fishing_rod")
 
   // stone blocks
   global.tfcRockType.forEach(rock => {
@@ -74,5 +75,22 @@ JEIEvents.hideItems(event => {
       event.hide(`minecraft:${wood.vanilla}_chest_boat`)
     }
 	})
+
+  // meats
+  const hideMeats = [
+    "beef",
+    "porkchop",
+    "mutton",
+    "chicken",
+    "rabbit",
+    "cod",
+    "salmon"
+  ]
+  hideMeats.forEach(meat => {
+    event.hide(`minecraft:${meat}`)
+    event.hide(`minecraft:cooked_${meat}`)
+  })
+  event.hide("minecraft:tropical_fish")
+  event.hide("minecraft:pufferfish")
 
 })
