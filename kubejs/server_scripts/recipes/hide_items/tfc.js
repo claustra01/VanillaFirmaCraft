@@ -1,4 +1,4 @@
-console.info('Tweak TFC item recipes...');
+console.info('Remove TFC item recipes...');
 
 ServerEvents.recipes((event) => {
   // tfc stone blocks

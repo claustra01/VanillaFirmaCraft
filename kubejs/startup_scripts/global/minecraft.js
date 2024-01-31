@@ -27,8 +27,6 @@ global.vanillaOres = [
   'diamond',
 ]
 
-global.vanillaCopperType = ['exposed', 'weathered', 'oxidized'];
-
 global.vanillaTileEntities = [
   // "minecraft:crafting_table",
   'minecraft:furnace',

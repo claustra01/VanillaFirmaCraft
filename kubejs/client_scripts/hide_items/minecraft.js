@@ -24,7 +24,7 @@ JEIEvents.hideItems((event) => {
   event.hide('minecraft:waxed_cut_copper');
   event.hide('minecraft:waxed_cut_copper_stairs');
   event.hide('minecraft:waxed_cut_copper_slab');
-  global.vanillaCopperType.forEach(type => {
+  for (const type of ['exposed', 'weathered', 'oxidized']) {
     event.hide(`minecraft:${type}_copper`);
     event.hide(`minecraft:${type}_cut_copper`);
     event.hide(`minecraft:${type}_cut_copper_stairs`);
@@ -33,7 +33,7 @@ JEIEvents.hideItems((event) => {
     event.hide(`minecraft:waxed_${type}_cut_copper`);
     event.hide(`minecraft:waxed_${type}_cut_copper_stairs`);
     event.hide(`minecraft:waxed_${type}_cut_copper_slab`);
-  })
+  }
 
   // tile entities
   global.vanillaTileEntities.forEach((tile) => {
