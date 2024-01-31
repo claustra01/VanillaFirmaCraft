@@ -56,13 +56,6 @@ ServerEvents.recipes((event) => {
       '#tfc:chisels',
     ])
   );
-
-  // raw stones
-  global.tfcRockType.forEach(rock => {
-    if (rock.replace) {
-      event.recipes.tfc.heating(`tfc:rock/cobble/${rock.name}`, 1399).resultItem(`tfc:rock/raw/${rock.name}`);
-    }
-  })
 });
 
 ServerEvents.tags('item', (event) => {

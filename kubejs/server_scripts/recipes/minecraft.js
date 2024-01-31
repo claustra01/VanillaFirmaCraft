@@ -6,7 +6,6 @@ ServerEvents.recipes((event) => {
   event.remove('minecraft:deepslate_bricks')
   event.remove('minecraft:chiseled_deepslate')
   event.remove('minecraft:deepslate_tiles')
-  event.recipes.tfc.heating('minecraft:cobbled_deepslate', 1399).resultItem('minecraft:deepslate');
   event.recipes.tfc.damage_inputs_shapeless_crafting(
     event.recipes.minecraft.crafting_shapeless('minecraft:polished_deepslate', [
       'minecraft:deepslate',
