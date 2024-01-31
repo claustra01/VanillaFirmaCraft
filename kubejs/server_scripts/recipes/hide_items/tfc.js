@@ -3,6 +3,8 @@ console.info('Remove TFC item recipes...');
 ServerEvents.recipes((event) => {
   // tfc stone blocks
   global.tfcRockType.forEach((rock) => {
+    event.remove({ output: `tfc:rock/gravel/${rock.name}` });
+    event.remove({ output: `tfc:rock/mossy_loose/${rock.name}` });
     if (rock.replace === false) {
       global.tfcRockBlocks.forEach((type) => {
         event.remove({ output: `tfc:rock/${type}/${rock.name}` });
