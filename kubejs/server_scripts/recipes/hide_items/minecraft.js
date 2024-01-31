@@ -9,7 +9,17 @@ ServerEvents.recipes((event) => {
   event.remove('minecraft:raw_gold');
   event.remove('minecraft:raw_gold_block');
 
-  // metal blocks
+  // gems
+  event.remove('minecraft:diamond');
+  event.remove('minecraft:emerald');
+  event.remove('minecraft:lapis_lazuli');
+  event.remove('minecraft:diamond_block');
+  event.remove('minecraft:emerald_block');
+
+  // metals
+  event.remove('minecraft:iron_ingot');
+  event.remove('minecraft:gold_ingot');
+  event.remove('minecraft:copper_ingot');
   event.remove('minecraft:iron_block');
   event.remove('minecraft:gold_block');
   event.remove('minecraft:copper_block');

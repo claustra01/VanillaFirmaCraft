@@ -13,7 +13,17 @@ JEIEvents.hideItems((event) => {
   event.hide('minecraft:raw_gold');
   event.hide('minecraft:raw_gold_block');
 
-  // metal blocks
+  // gems
+  event.hide('minecraft:diamond');
+  event.hide('minecraft:emerald');
+  event.hide('minecraft:lapis_lazuli');
+  event.hide('minecraft:diamond_block');
+  event.hide('minecraft:emerald_block');
+
+  // metals
+  event.hide('minecraft:iron_ingot');
+  event.hide('minecraft:gold_ingot');
+  event.hide('minecraft:copper_ingot');
   event.hide('minecraft:iron_block');
   event.hide('minecraft:gold_block');
   event.hide('minecraft:copper_block');
