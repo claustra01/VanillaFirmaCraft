@@ -19,7 +19,12 @@ ServerEvents.recipes((event) => {
     )
   );
 
+  // pumpkin
+  event.remove('minecraft:pumpkin_seeds');
+  event.shapeless('minecraft:pumpkin_seeds', ['tfc:food/pumpkin_chunks']);
+
   // melon
+  event.remove('minecraft:melon_seeds');
   event.shapeless('minecraft:melon_seeds', ['tfc:food/melon_slice']);
 
   // beekeeping

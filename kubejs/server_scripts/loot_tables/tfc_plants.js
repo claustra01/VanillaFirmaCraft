@@ -11,9 +11,15 @@ LootJS.modifiers((event) => {
     .matchMainHand('#tfc:knives')
     .addLoot('tfc:straw');
 
+  // pumpkin
+  event
+    .addBlockLootModifier('minecraft:pumpkin')
+    .removeLoot(Ingredient.all)
+    .addLoot('tfc:pumpkin');
+
   // melon
   event
     .addBlockLootModifier('minecraft:melon')
-    .removeLoot('minecraft:melon_slice')
-    .addWeightedLoot([3, 7], 'tfc:food/melon_slice');
+    .removeLoot(Ingredient.all)
+    .addLoot('tfc:melon');
 });
