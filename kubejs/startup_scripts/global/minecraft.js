@@ -16,6 +16,17 @@ global.vanillaWoodBlocks = [
   'chest_boat',
 ];
 
+global.vanillaOres = [
+  'coal',
+  'iron',
+  'copper',
+  'gold',
+  'redstone',
+  'emerald',
+  'lapis',
+  'diamond',
+]
+
 global.vanillaTileEntities = [
   // "minecraft:crafting_table",
   'minecraft:furnace',

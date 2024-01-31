@@ -1,6 +1,12 @@
 console.info('Hide vanilla items...');
 
 JEIEvents.hideItems((event) => {
+  // ores
+  global.vanillaOres.forEach((ore) => {
+    event.hide(`minecraft:${ore}_ore`);
+    event.hide(`minecraft:deepslate_${ore}_ore`);
+  });
+
   // tile entities
   global.vanillaTileEntities.forEach((tile) => {
     event.hide(tile);
