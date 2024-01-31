@@ -53,7 +53,7 @@ ServerEvents.recipes((event) => {
   );
   event.recipes.tfc.damage_inputs_shapeless_crafting(
     event.recipes.minecraft.crafting_shapeless('4x kubejs:blackstone_brick', [
-      'minecraft:polished_blackstone',
+      'minecraft:blackstone',
       '#tfc:chisels',
     ])
   );
