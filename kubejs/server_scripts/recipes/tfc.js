@@ -1,7 +1,7 @@
 console.info('Tweak TFC item recipes...');
 
 ServerEvents.recipes((event) => {
-  // disable rocks
+  // tfc stone blocks
   global.tfcRockType.forEach((rock) => {
     if (rock.replace === false) {
       global.tfcRockBlocks.forEach((type) => {
@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
     }
   });
 
-  // disable woods
+  // tfc wood blocks
   global.tfcWoodType.forEach((wood) => {
     if (wood.replace === false) {
       global.tfcWoodItems.forEach((type) => {
@@ -27,9 +27,30 @@ ServerEvents.recipes((event) => {
         event.remove({ output: `tfc:wood/planks/${wood.name}_${type}` });
       });
       global.firmalifeWoodItems.forEach((type) => {
-        event.remove({ output: `firmalife:wood/${type}/${wood.name}`});
+        event.remove({ output: `firmalife:wood/${type}/${wood.name}` });
       });
     }
   });
+
+  // tfc dirt blocks
+  global.tfcDirtType.forEach((dirt) => {
+    global.tfcDirtBlocks.forEach((type) => {
+      event.remove({ output: `tfc:${type}/${dirt}` });
+      event.remove({ output: `tfc:${type}/${dirt}_slab` });
+      event.remove({ output: `tfc:${type}/${dirt}_stairs` });
+      event.remove({ output: `tfc:${type}/${dirt}_wall` });
+    });
+  });
+
+  // tfc sand blocks
+  global.tfcSandType.forEach((sand) => {
+    global.tfcSandBlocks.forEach((type) => {
+      event.remove({ output: `tfc:${type}/${sand}` });
+      event.remove({ output: `tfc:${type}/${sand}_slab` });
+      event.remove({ output: `tfc:${type}/${sand}_stairs` });
+      event.remove({ output: `tfc:${type}/${sand}_wall` });
+    });
+  });
+
 
 });
