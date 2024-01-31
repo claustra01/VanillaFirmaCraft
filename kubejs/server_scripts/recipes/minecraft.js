@@ -76,14 +76,8 @@ ServerEvents.recipes((event) => {
 
   // endstone
   event.remove('minecraft:end_stone_bricks');
-  event.recipes.tfc.damage_inputs_shapeless_crafting(
-    event.recipes.minecraft.crafting_shapeless('4x kubejs:endstone_brick', [
-      'minecraft:end_stone',
-      '#tfc:chisels',
-    ])
-  );
   event.shaped('4x minecraft:end_stone_bricks', ['BMB', 'MBM', 'BMB'], {
-    B: 'kubejs:endstone_brick',
+    B: 'kubejs:end_stone_brick',
     M: '#tfc:mortar',
   });
 

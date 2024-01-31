@@ -108,7 +108,7 @@ global.vanillaEnableRockType = [
   },
   // the end
   {
-    "name": "endstone",
+    "name": "end_stone",
     "replace": false,
     "hardness": 3,
     "resistance": 9,
