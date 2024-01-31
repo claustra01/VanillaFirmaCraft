@@ -1,6 +1,11 @@
 console.info('Tweak vanilla recipes...');
 
 ServerEvents.recipes((event) => {
+  // tile entities
+  global.vanillaTileEntities.forEach((tile) => {
+    event.remove(tile);
+  });
+
   // deepslate
   event.remove('minecraft:polished_deepslate')
   event.remove('minecraft:deepslate_bricks')
@@ -119,5 +124,35 @@ ServerEvents.recipes((event) => {
     B: 'minecraft:nether_brick',
     M: '#tfc:mortar',
   });
+
+  // ores
+  event.remove('minecraft:raw_iron');
+  event.remove('minecraft:raw_iron_block');
+  event.remove('minecraft:raw_copper');
+  event.remove('minecraft:raw_copper_block');
+  event.remove('minecraft:raw_gold');
+  event.remove('minecraft:raw_gold_block');
+
+  // metal blocks
+  event.remove('minecraft:iron_block');
+  event.remove('minecraft:gold_block');
+  event.remove('minecraft:copper_block');
+  event.remove('minecraft:cut_copper');
+  event.remove('minecraft:cut_copper_stairs');
+  event.remove('minecraft:cut_copper_slabs');
+  event.remove('minecraft:waxed_copper_block');
+  event.remove('minecraft:waxed_cut_copper');
+  event.remove('minecraft:waxed_cut_copper_stairs');
+  event.remove('minecraft:waxed_cut_copper_slabs');
+  global.vanillaCopperType.forEach(type => {
+    event.remove(`minecraft:${type}_copper`);
+    event.remove(`minecraft:${type}_cut_copper`);
+    event.remove(`minecraft:${type}_cut_copper_stairs`);
+    event.remove(`minecraft:${type}_cut_copper_slab`);
+    event.remove(`minecraft:waxed_${type}_copper`);
+    event.remove(`minecraft:waxed_${type}_cut_copper`);
+    event.remove(`minecraft:waxed_${type}_cut_copper_stairs`);
+    event.remove(`minecraft:waxed_${type}_cut_copper_slab`);
+  })
 
 });

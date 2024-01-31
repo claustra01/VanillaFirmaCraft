@@ -6,6 +6,34 @@ JEIEvents.hideItems((event) => {
     event.hide(`minecraft:${ore}_ore`);
     event.hide(`minecraft:deepslate_${ore}_ore`);
   });
+  event.hide('minecraft:raw_iron');
+  event.hide('minecraft:raw_iron_block');
+  event.hide('minecraft:raw_copper');
+  event.hide('minecraft:raw_copper_block');
+  event.hide('minecraft:raw_gold');
+  event.hide('minecraft:raw_gold_block');
+
+  // metal blocks
+  event.hide('minecraft:iron_block');
+  event.hide('minecraft:gold_block');
+  event.hide('minecraft:copper_block');
+  event.hide('minecraft:cut_copper');
+  event.hide('minecraft:cut_copper_stairs');
+  event.hide('minecraft:cut_copper_slabs');
+  event.hide('minecraft:waxed_copper_block');
+  event.hide('minecraft:waxed_cut_copper');
+  event.hide('minecraft:waxed_cut_copper_stairs');
+  event.hide('minecraft:waxed_cut_copper_slab');
+  global.vanillaCopperType.forEach(type => {
+    event.hide(`minecraft:${type}_copper`);
+    event.hide(`minecraft:${type}_cut_copper`);
+    event.hide(`minecraft:${type}_cut_copper_stairs`);
+    event.hide(`minecraft:${type}_cut_copper_slab`);
+    event.hide(`minecraft:waxed_${type}_copper`);
+    event.hide(`minecraft:waxed_${type}_cut_copper`);
+    event.hide(`minecraft:waxed_${type}_cut_copper_stairs`);
+    event.hide(`minecraft:waxed_${type}_cut_copper_slab`);
+  })
 
   // tile entities
   global.vanillaTileEntities.forEach((tile) => {
