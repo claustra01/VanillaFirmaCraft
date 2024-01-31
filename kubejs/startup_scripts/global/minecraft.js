@@ -39,6 +39,7 @@ global.vanillaEnableRockType = [
   {
     "name": "stone",
     "tfc_name": "dacite",
+    "replace": true,
     "hardness": 1.5,
     "resistance": 6,
     "dimension": "minecraft:overworld",
@@ -46,6 +47,7 @@ global.vanillaEnableRockType = [
   },
   {
     "name": "deepslate",
+    "replace": false,
     "hardness": 3,
     "resistance": 6,
     "dimension": "minecraft:overworld",
@@ -54,6 +56,7 @@ global.vanillaEnableRockType = [
   {
     "name": "granite",
     "tfc_name": "granite",
+    "replace": true,
     "hardness": 1.5,
     "resistance": 6,
     "dimension": "minecraft:overworld",
@@ -62,6 +65,7 @@ global.vanillaEnableRockType = [
   {
     "name": "diorite",
     "tfc_name": "diorite",
+    "replace": true,
     "hardness": 1.5,
     "resistance": 6,
     "dimension": "minecraft:overworld",
@@ -70,6 +74,7 @@ global.vanillaEnableRockType = [
   {
     "name": "andesite",
     "tfc_name": "andesite",
+    "replace": true,
     "hardness": 1.5,
     "resistance": 6,
     "dimension": "minecraft:overworld",
@@ -78,6 +83,7 @@ global.vanillaEnableRockType = [
   // nether
   {
     "name": "netherrack",
+    "replace": false,
     "hardness": 0.4,
     "resistance": 0.4,
     "dimension": "minecraft:the_nether",
@@ -86,6 +92,7 @@ global.vanillaEnableRockType = [
   {
     "name": "basalt",
     "tfc_name": "basalt",
+    "replace": true,
     "hardness": 1.25,
     "resistance": 4.2,
     "dimension": "minecraft:the_nether",
@@ -93,6 +100,7 @@ global.vanillaEnableRockType = [
   },
   {
     "name": "blackstone",
+    "replace": false,
     "hardness": 1.5,
     "resistance": 6,
     "dimension": "minecraft:the_nether",
@@ -101,6 +109,7 @@ global.vanillaEnableRockType = [
   // the end
   {
     "name": "endstone",
+    "replace": false,
     "hardness": 3,
     "resistance": 9,
     "dimension": "minecraft:the_end",

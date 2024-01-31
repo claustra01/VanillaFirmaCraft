@@ -285,6 +285,7 @@ const vanillaEnableRockType = [
   {
     "name": "stone",
     "tfc_name": "dacite",
+    "replace": true,
     "hardness": 1.5,
     "resistance": 6,
     "dimension": "minecraft:overworld",
@@ -292,6 +293,7 @@ const vanillaEnableRockType = [
   },
   {
     "name": "deepslate",
+    "replace": false,
     "hardness": 3,
     "resistance": 6,
     "dimension": "minecraft:overworld",
@@ -300,6 +302,7 @@ const vanillaEnableRockType = [
   {
     "name": "granite",
     "tfc_name": "granite",
+    "replace": true,
     "hardness": 1.5,
     "resistance": 6,
     "dimension": "minecraft:overworld",
@@ -308,6 +311,7 @@ const vanillaEnableRockType = [
   {
     "name": "diorite",
     "tfc_name": "diorite",
+    "replace": true,
     "hardness": 1.5,
     "resistance": 6,
     "dimension": "minecraft:overworld",
@@ -316,6 +320,7 @@ const vanillaEnableRockType = [
   {
     "name": "andesite",
     "tfc_name": "andesite",
+    "replace": true,
     "hardness": 1.5,
     "resistance": 6,
     "dimension": "minecraft:overworld",
@@ -324,6 +329,7 @@ const vanillaEnableRockType = [
   // nether
   {
     "name": "netherrack",
+    "replace": false,
     "hardness": 0.4,
     "resistance": 0.4,
     "dimension": "minecraft:the_nether",
@@ -332,6 +338,7 @@ const vanillaEnableRockType = [
   {
     "name": "basalt",
     "tfc_name": "basalt",
+    "replace": true,
     "hardness": 1.25,
     "resistance": 4.2,
     "dimension": "minecraft:the_nether",
@@ -339,6 +346,7 @@ const vanillaEnableRockType = [
   },
   {
     "name": "blackstone",
+    "replace": false,
     "hardness": 1.5,
     "resistance": 6,
     "dimension": "minecraft:the_nether",
@@ -347,6 +355,7 @@ const vanillaEnableRockType = [
   // the end
   {
     "name": "endstone",
+    "replace": false,
     "hardness": 3,
     "resistance": 9,
     "dimension": "minecraft:the_end",
@@ -358,7 +367,7 @@ const vanillaEnableRockType = [
 tfcOreType.forEach(ore => {
   vanillaEnableRockType.forEach(async rock => {
 
-    if (rock.tfc_name) {
+    if (rock.replace) {
       return;
     }
 
@@ -405,7 +414,7 @@ tfcOreType.forEach(ore => {
           S:customReplacements <
           >
           S:ores <
-              ${rock.tfc_name ? `tfc:ore/normal_${ore.name}/${rock.tfc_name}` : `kubejs:ore/${ore.name}/${rock.name}`}
+              ${rock.replace ? `tfc:ore/normal_${ore.name}/${rock.tfc_name}` : `kubejs:ore/${ore.name}/${rock.name}`}
           >
           I:rarity=${veinData[0]}
           S:replaceableBlocks <
@@ -465,7 +474,7 @@ const capitalize = (str) => {
 }
 tfcOreType.forEach(ore => {
   vanillaEnableRockType.forEach(rock => {
-    if (rock.tfc_name) {
+    if (rock.replace) {
       return;
     }
     langData += `"block.kubejs.ore.${ore.name}.${rock.name}": "Normal ${capitalize(rock.name)} ${capitalize(ore.name)}",\n`

@@ -4,7 +4,7 @@ StartupEvents.registry('block', (event) => {
   // custom tfc-style ores
   global.vanillaEnableRockType.forEach((rock) => {
     global.tfcOreType.forEach((ore) => {
-      if (rock.tfc_name) {
+      if (rock.replace) {
         return;
       }
       // register block
