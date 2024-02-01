@@ -120,8 +120,6 @@ global.tfcPlants = [
   'tfc:plant/jungle_vines',
   'tfc:plant/saguaro',
   'tfc:plant/sea_pickle',
-  'tfc:plant/aspen_krummholz',
-  'tfc:plant/white_cedar_krummholz',
   'tfc:wild_crop/barley',
   'tfc:wild_crop/oat',
   'tfc:wild_crop/rye',

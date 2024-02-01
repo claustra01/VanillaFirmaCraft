@@ -45,6 +45,7 @@ JEIEvents.hideItems((event) => {
     event.hide(`tfc:wood/sapling/${wood.name}`);
     event.hide(`tfc:wood/twig/${wood.name}`);
     event.hide(`tfc:wood/fallen_leaves/${wood.name}`);
+    event.hide(`tfc:plant/${wood.name}_krummholz`)
     // disabled
     if (wood.replace === false) {
       global.tfcWoodItems.forEach((type) => {
