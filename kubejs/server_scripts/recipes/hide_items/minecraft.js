@@ -10,18 +10,22 @@ ServerEvents.recipes((event) => {
   event.remove('minecraft:raw_gold_block');
 
   // gems
+  event.remove('minecraft:coal');
   event.remove('minecraft:diamond');
   event.remove('minecraft:emerald');
   event.remove('minecraft:lapis_lazuli');
+  event.remove('minecraft:coal_block');
   event.remove('minecraft:diamond_block');
   event.remove('minecraft:emerald_block');
 
   // metals
   event.remove('minecraft:iron_ingot');
   event.remove('minecraft:gold_ingot');
-  event.remove('minecraft:copper_ingot');
+  event.remove('minecraft:iron_nugget');
+  event.remove('minecraft:gold_nugget');
   event.remove('minecraft:iron_block');
   event.remove('minecraft:gold_block');
+  event.remove('minecraft:copper_ingot');
   event.remove('minecraft:copper_block');
   event.remove('minecraft:cut_copper');
   event.remove('minecraft:cut_copper_stairs');
@@ -40,6 +44,14 @@ ServerEvents.recipes((event) => {
     event.remove(`minecraft:waxed_${type}_cut_copper_stairs`);
     event.remove(`minecraft:waxed_${type}_cut_copper_slab`);
   }
+
+  // metal decorations
+  event.remove('minecraft:iron_bars')
+  event.remove('minecraft:iron_door')
+  event.remove('minecraft:iron_trapdoor')
+  event.remove('minecraft:chain')
+  event.remove('minecraft:heavy_weighted_pressure_plate')
+  event.remove('minecraft:light_weighted_pressure_plate')
 
   // tile entities
   global.vanillaTileEntities.forEach((tile) => {

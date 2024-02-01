@@ -1,6 +1,9 @@
 console.info('Tweak vanilla recipes...');
 
 ServerEvents.recipes((event) => {
+  // stick
+  event.remove({ id: 'minecraft:stick'})
+
   // deepslate
   event.remove('minecraft:polished_deepslate')
   event.remove('minecraft:deepslate_bricks')

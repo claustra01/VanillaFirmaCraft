@@ -14,18 +14,22 @@ JEIEvents.hideItems((event) => {
   event.hide('minecraft:raw_gold_block');
 
   // gems
+  event.hide('minecraft:coal');
   event.hide('minecraft:diamond');
   event.hide('minecraft:emerald');
   event.hide('minecraft:lapis_lazuli');
+  event.hide('minecraft:coal_block');
   event.hide('minecraft:diamond_block');
   event.hide('minecraft:emerald_block');
 
   // metals
   event.hide('minecraft:iron_ingot');
   event.hide('minecraft:gold_ingot');
-  event.hide('minecraft:copper_ingot');
+  event.hide('minecraft:iron_nugget');
+  event.hide('minecraft:gold_nugget');
   event.hide('minecraft:iron_block');
   event.hide('minecraft:gold_block');
+  event.hide('minecraft:copper_ingot');
   event.hide('minecraft:copper_block');
   event.hide('minecraft:cut_copper');
   event.hide('minecraft:cut_copper_stairs');
@@ -44,6 +48,14 @@ JEIEvents.hideItems((event) => {
     event.hide(`minecraft:waxed_${type}_cut_copper_stairs`);
     event.hide(`minecraft:waxed_${type}_cut_copper_slab`);
   }
+
+  // metal decorations
+  event.hide('minecraft:iron_bars')
+  event.hide('minecraft:iron_door')
+  event.hide('minecraft:iron_trapdoor')
+  event.hide('minecraft:chain')
+  event.hide('minecraft:heavy_weighted_pressure_plate')
+  event.hide('minecraft:light_weighted_pressure_plate')
 
   // tile entities
   global.vanillaTileEntities.forEach((tile) => {
