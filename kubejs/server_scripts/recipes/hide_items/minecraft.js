@@ -30,19 +30,19 @@ ServerEvents.recipes((event) => {
   event.remove('minecraft:cut_copper');
   event.remove('minecraft:cut_copper_stairs');
   event.remove('minecraft:cut_copper_slabs');
-  event.remove('minecraft:waxed_copper_block');
-  event.remove('minecraft:waxed_cut_copper');
-  event.remove('minecraft:waxed_cut_copper_stairs');
-  event.remove('minecraft:waxed_cut_copper_slab');
+  event.remove({ output: 'minecraft:waxed_copper_block' });
+  event.remove({ output: 'minecraft:waxed_cut_copper' });
+  event.remove({ output: 'minecraft:waxed_cut_copper_stairs' });
+  event.remove({ output: 'minecraft:waxed_cut_copper_slab' });
   for (const type of ['exposed', 'weathered', 'oxidized']) {
     event.remove(`minecraft:${type}_copper`);
     event.remove(`minecraft:${type}_cut_copper`);
     event.remove(`minecraft:${type}_cut_copper_stairs`);
     event.remove(`minecraft:${type}_cut_copper_slab`);
-    event.remove(`minecraft:waxed_${type}_copper`);
-    event.remove(`minecraft:waxed_${type}_cut_copper`);
-    event.remove(`minecraft:waxed_${type}_cut_copper_stairs`);
-    event.remove(`minecraft:waxed_${type}_cut_copper_slab`);
+    event.remove({ output: `minecraft:waxed_${type}_copper` });
+    event.remove({ output: `minecraft:waxed_${type}_cut_copper` });
+    event.remove({ output: `minecraft:waxed_${type}_cut_copper_stairs` });
+    event.remove({ output: `minecraft:waxed_${type}_cut_copper_slab` });
   }
 
   // metal decorations
@@ -82,7 +82,6 @@ ServerEvents.recipes((event) => {
   event.remove('minecraft:mossy_stone_bricks');
   event.remove('minecraft:cracked_stone_bricks');
   event.remove('minecraft:chiseled_stone_bricks');
-
   event.remove('minecraft:stone_button');
   event.remove('minecraft:stone_pressure_plate');
 
