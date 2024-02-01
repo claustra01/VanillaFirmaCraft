@@ -43,6 +43,8 @@ global.vanillaTileEntities = [
   'minecraft:grindstone',
   'minecraft:smithing_table',
   'minecraft:stonecutter',
+  'minecraft:campfire',
+  'minecraft:soul_campfire',
 ];
 
 global.vanillaEnableRockType = [
