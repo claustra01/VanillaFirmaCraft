@@ -52,6 +52,22 @@ ServerEvents.recipes((event) => {
     'minecraft:honey_bottle',
     'firmalife:jar/honey'
   );
+
+  // cocoa
+  event.custom({
+    "type": "firmalife:oven",
+    "ingredient": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "minecraft:cocoa_beans"
+      }
+    },
+    "result_item": {
+      "item": "firmalife:food/roasted_cocoa_beans"
+    },
+    "temperature": 400,
+    "duration": 1000
+  });
 });
 
 ServerEvents.tags('item', (event) => {
@@ -73,4 +89,8 @@ ServerEvents.tags('item', (event) => {
 
   // honey
   event.add('tfc:sweetener', 'minecraft:honeycomb');
+
+  // cocoa
+  event.add('tfc:foods', 'minecraft:cocoa_beans');
+  event.add('firmalife:foods/heatable', 'minecraft:cocoa_beans');
 });

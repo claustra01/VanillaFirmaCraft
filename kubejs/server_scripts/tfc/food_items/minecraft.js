@@ -61,4 +61,7 @@ TFCEvents.data((event) => {
   event.foodItem('minecraft:chorus_fruit', (food) => {
     food.decayModifier(4.9);
   });
+  event.foodItem('minecraft:cocoa_beans', (food) => {
+    food.decayModifier(0.25);
+  });
 });
