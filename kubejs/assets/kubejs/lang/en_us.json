@@ -262,5 +262,9 @@
   "block.kubejs.ore.topaz.blackstone": "Normal Blackstone Topaz",
   "block.kubejs.ore.topaz.blackstone.prospected": "Topaz",
   "block.kubejs.ore.topaz.end_stone": "Normal End Stone Topaz",
-  "block.kubejs.ore.topaz.end_stone.prospected": "Topaz"  
+  "block.kubejs.ore.topaz.end_stone.prospected": "Topaz",
+
+  "block.tfc.white_kaolin_clay.prospected": "White Kaolin Clay",
+  "block.tfc.pink_kaolin_clay.prospected": "Pink Kaolin Clay",
+  "block.tfc.red_kaolin_clay.prospected": "Red Kaolin Clay"
 }
