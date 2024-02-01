@@ -6,7 +6,8 @@ LootJS.modifiers((event) => {
     .addEntityLootModifier('minecraft:camel')
     .addWeightedLoot([3, 6], ['tfc:food/camelidae'])
     .addWeightedLoot([1, 2], ['minecraft:bone'])
-    .addLoot('tfc:medium_raw_hide');
+    .addLoot('tfc:medium_raw_hide')
+    .addLoot(LootEntry.of('waterflasks:bladder').when((c) => c.randomChance(0.1)));
 
   // cat
   event
@@ -31,7 +32,8 @@ LootJS.modifiers((event) => {
     .addWeightedLoot([3, 6], ['tfc:food/beef'])
     .addWeightedLoot([1, 2], ['minecraft:bone'])
     .addWeightedLoot([1, 3], ['firmalife:rennet'])
-    .addLoot('tfc:large_raw_hide');
+    .addLoot('tfc:large_raw_hide')
+    .addLoot(LootEntry.of('waterflasks:bladder').when((c) => c.randomChance(0.5)));
 
   // dolphin
   event
@@ -46,7 +48,8 @@ LootJS.modifiers((event) => {
     .removeLoot('minecraft:leather')
     .addWeightedLoot([3, 6], ['tfc:food/horse_meat'])
     .addWeightedLoot([1, 2], ['minecraft:bone'])
-    .addLoot('tfc:medium_raw_hide');
+    .addLoot('tfc:medium_raw_hide')
+    .addLoot(LootEntry.of('waterflasks:bladder').when((c) => c.randomChance(0.2)));
 
   // fox
   event
@@ -64,7 +67,8 @@ LootJS.modifiers((event) => {
     .addWeightedLoot([1, 2], ['minecraft:bone'])
     .addWeightedLoot([1, 3], ['firmalife:rennet'])
     .addLoot('tfc:medium_raw_hide')
-    .addLoot('tfc:goat_horn');
+    .addLoot('tfc:goat_horn')
+    .addLoot(LootEntry.of('waterflasks:bladder').when((c) => c.randomChance(0.1)));
 
   // horse
   event
@@ -72,7 +76,8 @@ LootJS.modifiers((event) => {
     .removeLoot('minecraft:leather')
     .addWeightedLoot([3, 6], ['tfc:food/horse_meat'])
     .addWeightedLoot([1, 2], ['minecraft:bone'])
-    .addLoot('tfc:medium_raw_hide');
+    .addLoot('tfc:medium_raw_hide')
+    .addLoot(LootEntry.of('waterflasks:bladder').when((c) => c.randomChance(0.2)));
 
   // llama
   event
@@ -80,7 +85,8 @@ LootJS.modifiers((event) => {
     .removeLoot('minecraft:leather')
     .addWeightedLoot([3, 6], ['tfc:food/camelidae'])
     .addWeightedLoot([1, 2], ['minecraft:bone'])
-    .addLoot('tfc:medium_raw_hide');
+    .addLoot('tfc:medium_raw_hide')
+    .addLoot(LootEntry.of('waterflasks:bladder').when((c) => c.randomChance(0.1)));
 
   // mooshroom
   event
@@ -90,7 +96,8 @@ LootJS.modifiers((event) => {
     .addWeightedLoot([3, 6], ['tfc:food/beef'])
     .addWeightedLoot([1, 2], ['minecraft:bone'])
     .addWeightedLoot([1, 3], ['firmalife:rennet'])
-    .addLoot('tfc:large_raw_hide');
+    .addLoot('tfc:large_raw_hide')
+    .addLoot(LootEntry.of('waterflasks:bladder').when((c) => c.randomChance(0.5)));
 
   // mule
   event
@@ -98,7 +105,8 @@ LootJS.modifiers((event) => {
     .removeLoot('minecraft:leather')
     .addWeightedLoot([3, 6], ['tfc:food/horse_meat'])
     .addWeightedLoot([1, 2], ['minecraft:bone'])
-    .addLoot('tfc:medium_raw_hide');
+    .addLoot('tfc:medium_raw_hide')
+    .addLoot(LootEntry.of('waterflasks:bladder').when((c) => c.randomChance(0.1)));
 
   // ocelot
   event
@@ -133,7 +141,8 @@ LootJS.modifiers((event) => {
     .removeLoot('minecraft:cod')
     .removeLoot('minecraft:salmon')
     .addWeightedLoot([1, 2], ['minecraft:bone'])
-    .addLoot('tfc:large_raw_hide');
+    .addLoot('tfc:large_raw_hide')
+    .addLoot(LootEntry.of('waterflasks:bladder').when((c) => c.randomChance(0.2)));
 
   // rabbit
   event
@@ -151,7 +160,8 @@ LootJS.modifiers((event) => {
     .addWeightedLoot([2, 4], ['tfc:food/mutton'])
     .addWeightedLoot([1, 2], ['minecraft:bone'])
     .addWeightedLoot([1, 3], ['firmalife:rennet'])
-    .addLoot('tfc:small_sheepskin_hide');
+    .addLoot('tfc:small_sheepskin_hide')
+    .addLoot(LootEntry.of('waterflasks:bladder').when((c) => c.randomChance(0.1)));
   global.colors.forEach((color) => {
     event
       .addEntityLootModifier('minecraft:sheep')
