@@ -12,7 +12,7 @@ global.colors = [
   'purple',
   'blue',
   'brown',
-  'greed',
+  'green',
   'red',
   'black',
 ];
