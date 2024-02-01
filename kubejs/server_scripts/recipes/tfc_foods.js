@@ -31,15 +31,21 @@ ServerEvents.recipes((event) => {
   event.remove('minecraft:beehive');
   event.remove('minecraft:honey_bottle');
   event.remove({ output: 'firmalife:beehive' });
+  event.remove({ output: 'firmalife:jar/honey' });
   event.shaped('minecraft:beehive', ['LFL', 'LTL', 'LFL'], {
     L: '#tfc:lumber',
     F: 'firmalife:beehive_frame',
     T: 'tfc:thatch',
   });
-  event.replaceInput(
-    { input: 'firmalife:raw_honey' },
-    'firmalife:raw_honey',
-    'minecraft:honeycomb'
+  event.recipes.tfc.extra_products_shapeless_crafting(
+    'firmalife:beeswax',
+    event.recipes.tfc.damage_inputs_shapeless_crafting(
+      event.recipes.minecraft.crafting_shapeless('firmalife:jar/honey', [
+        'minecraft:honeycomb',
+        'tfc:empty_jar',
+        '#tfc:knives',
+      ])
+    )
   );
   event.replaceInput(
     { input: 'minecraft:honey_bottle' },

@@ -164,4 +164,10 @@ JEIEvents.hideItems((event) => {
   event.hide('minecraft:suspicious_stew');
 
   event.hide('minecraft:honey_bottle');
+
+  // candles
+  event.hide('minecraft:candle');
+  global.colors.forEach((color) => {
+    event.hide(`minecraft:${color}_candle`);
+  });
 });

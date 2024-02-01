@@ -95,4 +95,9 @@ ServerEvents.recipes((event) => {
     }
   });
 
+  // candles
+  event.remove('minecraft:candle');
+  global.colors.forEach((color) => {
+    event.remove(`minecraft:${color}_candle`);
+  });
 });
