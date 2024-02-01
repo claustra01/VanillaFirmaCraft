@@ -2,7 +2,7 @@
 [general]
 	#
 	# If the TFC world preset 'tfc:overworld' should be set as the default world generation when creating a new world.
-	defaultWorldPreset = "tfc:overworld"
+	defaultWorldPreset = "minecraft:normal"
 
 [calendar]
 	#
