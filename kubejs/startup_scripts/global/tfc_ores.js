@@ -124,14 +124,6 @@ global.tfcOreType = [
     },
   },
   {
-    name: 'kaolinite',
-    modId: 'tfc',
-    isGraded: false,
-    veinData: {
-      'minecraft:overworld': [900, 210, 0, 300, 200],
-    },
-  },
-  {
     name: 'gypsum',
     modId: 'tfc',
     isGraded: false,
