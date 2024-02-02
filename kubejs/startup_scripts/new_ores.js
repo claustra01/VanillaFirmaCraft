@@ -15,7 +15,7 @@ StartupEvents.registry('block', (event) => {
         .resistance(rock.resistance)
         .tagBoth('forge:ores')
         .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:needs_stone_tool')
+        .tagBlock(`${ore.miningLevel === 'black_steel' ? 'tfc' : 'minecraft'}:needs_${ore.miningLevel}_tool`)
         .tagBlock('tfc:rock/ores')
         .tagBlock('tfc:prospectable');
     });
