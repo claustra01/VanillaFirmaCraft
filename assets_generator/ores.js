@@ -127,7 +127,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
-    indicator: 'tfc:rock/loose/basalt',
+    indicator: 'tfc:rock/mossy_loose/basalt',
     veinData: {
       'minecraft:overworld': [900, 210, 0, 300, 200],
     },
@@ -137,7 +137,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
-    indicator: 'tfc:rock/loose/basalt',
+    indicator: 'tfc:rock/mossy_loose/basalt',
     veinData: {
       'minecraft:overworld': [900, 90, -45, 300, 200],
     },
@@ -147,7 +147,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
-    indicator: 'tfc:rock/loose/diorite',
+    indicator: 'tfc:rock/mossy_loose/diorite',
     veinData: {
       'minecraft:overworld': [1200, 90, 30, 1000, 700],
     },
@@ -157,7 +157,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
-    indicator: 'tfc:rock/loose/basalt',
+    indicator: 'tfc:rock/mossy_loose/basalt',
     veinData: {
       'minecraft:overworld': [900, 90, -45, 300, 200],
     },
@@ -167,7 +167,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
-    indicator: 'tfc:rock/loose/andesite',
+    indicator: 'tfc:rock/mossy_loose/andesite',
     veinData: {
       'minecraft:overworld': [900, 210, 0, 300, 200],
     },
@@ -177,7 +177,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
-    indicator: 'tfc:rock/loose/granite',
+    indicator: 'tfc:rock/mossy_loose/granite',
     veinData: {
       'minecraft:overworld': [900, 90, -45, 300, 200],
     },
@@ -187,7 +187,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
-    indicator: 'tfc:rock/loose/granite',
+    indicator: 'tfc:rock/mossy_loose/granite',
     veinData: {
       'minecraft:overworld': [900, 90, -45, 300, 200],
     },
@@ -197,7 +197,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
-    indicator: 'tfc:rock/loose/andesite',
+    indicator: 'tfc:rock/mossy_loose/andesite',
     veinData: {
       'minecraft:overworld': [900, 210, 0, 300, 200],
     },
@@ -207,7 +207,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
-    indicator: 'tfc:rock/loose/diorite',
+    indicator: 'tfc:rock/mossy_loose/diorite',
     veinData: {
       'minecraft:overworld': [900, 90, -45, 300, 200],
     },
@@ -217,7 +217,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
-    indicator: 'tfc:rock/loose/diorite',
+    indicator: 'tfc:rock/mossy_loose/diorite',
     veinData: {
       'minecraft:overworld': [900, 210, 0, 300, 200],
     },
@@ -227,7 +227,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
-    indicator: 'tfc:rock/loose/diorite',
+    indicator: 'tfc:rock/mossy_loose/diorite',
     veinData: {
       'minecraft:overworld': [1200, 90, 30, 1800, 1500],
     },

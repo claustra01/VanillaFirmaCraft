@@ -103,4 +103,5 @@ global.tfcRockBlocks = [
   'chiseled',
   'aqueduct',
   'loose',
+  'mossy_loose'
 ];
