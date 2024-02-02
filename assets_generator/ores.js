@@ -127,6 +127,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
+    indicator: 'tfc:rock/loose/basalt',
     veinData: {
       'minecraft:overworld': [900, 210, 0, 300, 200],
     },
@@ -136,6 +137,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
+    indicator: 'tfc:rock/loose/basalt',
     veinData: {
       'minecraft:overworld': [900, 90, -45, 300, 200],
     },
@@ -145,6 +147,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
+    indicator: 'tfc:rock/loose/diorite',
     veinData: {
       'minecraft:overworld': [1200, 90, 30, 1000, 700],
     },
@@ -154,6 +157,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
+    indicator: 'tfc:rock/loose/basalt',
     veinData: {
       'minecraft:overworld': [900, 90, -45, 300, 200],
     },
@@ -163,6 +167,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
+    indicator: 'tfc:rock/loose/andesite',
     veinData: {
       'minecraft:overworld': [900, 210, 0, 300, 200],
     },
@@ -172,6 +177,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
+    indicator: 'tfc:rock/loose/granite',
     veinData: {
       'minecraft:overworld': [900, 90, -45, 300, 200],
     },
@@ -181,6 +187,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
+    indicator: 'tfc:rock/loose/granite',
     veinData: {
       'minecraft:overworld': [900, 90, -45, 300, 200],
     },
@@ -190,6 +197,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
+    indicator: 'tfc:rock/loose/andesite',
     veinData: {
       'minecraft:overworld': [900, 210, 0, 300, 200],
     },
@@ -199,6 +207,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
+    indicator: 'tfc:rock/loose/diorite',
     veinData: {
       'minecraft:overworld': [900, 90, -45, 300, 200],
     },
@@ -208,6 +217,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
+    indicator: 'tfc:rock/loose/diorite',
     veinData: {
       'minecraft:overworld': [900, 210, 0, 300, 200],
     },
@@ -217,6 +227,7 @@ const tfcOreType = [
     modId: 'tfc',
     miningLevel: 'stone',
     type: 'mineral',
+    indicator: 'tfc:rock/loose/diorite',
     veinData: {
       'minecraft:overworld': [1200, 90, 30, 1800, 1500],
     },
@@ -479,7 +490,12 @@ tfcOreType.forEach(ore => {
                       tfc:ore/small_${ore.name}, 3
                       tfc:ore/small_${ore.name}, 9
                       tfc:ore/small_${ore.name}, 15
-                  ` : ""}
+                  ` : (ore.type === 'mineral' ? `
+                          ${ore.indicator}, 3
+                          ${ore.indicator}, 9
+                          ${ore.indicator}, 15
+                      ` : '')
+                  }
               >
               S:continuity=10.0
               I:distortion=1
