@@ -425,6 +425,9 @@ tfcOreType.forEach(ore => {
 tfcOreType.forEach(ore => {
   vanillaEnableRockType.forEach(async rock => {
     let filePath = `../config/adlods/Deposits/_${ore.name}_${rock.name}.cfg`
+    let oreBlock = rock.replace ?
+      `tfc:ore/${ore.type === 'metal' ? 'normal_' : ''}${ore.name}/${rock.tfc_name}` :
+      `kubejs:ore/${ore.name}/${rock.name}`
     let enabled = false
     let veinData = [256000, 0, 0, 1, 1]
     if (ore.veinData[rock.dimension]) {
@@ -439,7 +442,7 @@ tfcOreType.forEach(ore => {
           S:customReplacements <
           >
           S:ores <
-              ${rock.replace ? `tfc:ore/normal_${ore.name}/${rock.tfc_name}` : `kubejs:ore/${ore.name}/${rock.name}`}
+              ${oreBlock}
           >
           I:rarity=${veinData[0]}
           S:replaceableBlocks <
