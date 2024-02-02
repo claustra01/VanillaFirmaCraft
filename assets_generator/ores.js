@@ -6,7 +6,8 @@ const tfcOreType = [
   {
     name: 'native_copper',
     modId: 'tfc',
-    isGraded: true,
+    miningLevel: 'stone',
+    type: 'metal',
     veinData: {
       'minecraft:overworld': [400, 75, -30, 1000, 700],
     },
@@ -14,7 +15,8 @@ const tfcOreType = [
   {
     name: 'native_gold',
     modId: 'tfc',
-    isGraded: true,
+    miningLevel: 'stone',
+    type: 'metal',
     veinData: {
       'minecraft:overworld': [700, 60, -30, 700, 400],
     },
@@ -22,7 +24,8 @@ const tfcOreType = [
   {
     name: 'hematite',
     modId: 'tfc',
-    isGraded: true,
+    miningLevel: 'stone',
+    type: 'metal',
     veinData: {
       'minecraft:overworld': [600, 75, -30, 1000, 700],
     },
@@ -30,7 +33,8 @@ const tfcOreType = [
   {
     name: 'native_silver',
     modId: 'tfc',
-    isGraded: true,
+    miningLevel: 'stone',
+    type: 'metal',
     veinData: {
       'minecraft:overworld': [600, 75, -30, 1000, 700],
     },
@@ -38,7 +42,8 @@ const tfcOreType = [
   {
     name: 'cassiterite',
     modId: 'tfc',
-    isGraded: true,
+    miningLevel: 'stone',
+    type: 'metal',
     veinData: {
       'minecraft:overworld': [400, 75, -30, 1000, 700],
     },
@@ -46,7 +51,8 @@ const tfcOreType = [
   {
     name: 'bismuthinite',
     modId: 'tfc',
-    isGraded: true,
+    miningLevel: 'stone',
+    type: 'metal',
     veinData: {
       'minecraft:overworld': [400, 75, -30, 1000, 700],
     },
@@ -54,7 +60,8 @@ const tfcOreType = [
   {
     name: 'garnierite',
     modId: 'tfc',
-    isGraded: true,
+    miningLevel: 'stone',
+    type: 'metal',
     veinData: {
       'minecraft:overworld': [700, 60, -30, 700, 400],
     },
@@ -62,7 +69,8 @@ const tfcOreType = [
   {
     name: 'malachite',
     modId: 'tfc',
-    isGraded: true,
+    miningLevel: 'stone',
+    type: 'metal',
     veinData: {
       'minecraft:overworld': [600, 75, -30, 1000, 700],
     },
@@ -70,7 +78,8 @@ const tfcOreType = [
   {
     name: 'magnetite',
     modId: 'tfc',
-    isGraded: true,
+    miningLevel: 'stone',
+    type: 'metal',
     veinData: {
       'minecraft:overworld': [600, 75, -30, 1000, 700],
     },
@@ -78,7 +87,8 @@ const tfcOreType = [
   {
     name: 'limonite',
     modId: 'tfc',
-    isGraded: true,
+    miningLevel: 'stone',
+    type: 'metal',
     veinData: {
       'minecraft:overworld': [600, 75, -30, 1000, 700],
     },
@@ -86,7 +96,8 @@ const tfcOreType = [
   {
     name: 'sphalerite',
     modId: 'tfc',
-    isGraded: true,
+    miningLevel: 'stone',
+    type: 'metal',
     veinData: {
       'minecraft:overworld': [400, 75, -30, 1000, 700],
     },
@@ -94,7 +105,8 @@ const tfcOreType = [
   {
     name: 'tetrahedrite',
     modId: 'tfc',
-    isGraded: true,
+    miningLevel: 'stone',
+    type: 'metal',
     veinData: {
       'minecraft:overworld': [400, 75, -30, 1000, 700],
     },
@@ -103,7 +115,8 @@ const tfcOreType = [
   {
     name: 'chromite',
     modId: 'firmalife',
-    isGraded: true,
+    miningLevel: 'stone',
+    type: 'metal',
     veinData: {
       'minecraft:overworld': [700, 60, -30, 700, 400],
     },
@@ -112,7 +125,8 @@ const tfcOreType = [
   {
     name: 'bituminous_coal',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'stone',
+    type: 'mineral',
     veinData: {
       'minecraft:overworld': [900, 210, 0, 300, 200],
     },
@@ -120,7 +134,8 @@ const tfcOreType = [
   {
     name: 'lignite',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'stone',
+    type: 'mineral',
     veinData: {
       'minecraft:overworld': [900, 90, -45, 300, 200],
     },
@@ -128,7 +143,8 @@ const tfcOreType = [
   {
     name: 'gypsum',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'stone',
+    type: 'mineral',
     veinData: {
       'minecraft:overworld': [1200, 90, 30, 1000, 700],
     },
@@ -136,7 +152,8 @@ const tfcOreType = [
   {
     name: 'graphite',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'stone',
+    type: 'mineral',
     veinData: {
       'minecraft:overworld': [900, 90, -45, 300, 200],
     },
@@ -144,7 +161,8 @@ const tfcOreType = [
   {
     name: 'sulfur',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'stone',
+    type: 'mineral',
     veinData: {
       'minecraft:overworld': [900, 210, 0, 300, 200],
     },
@@ -152,7 +170,8 @@ const tfcOreType = [
   {
     name: 'cinnabar',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'stone',
+    type: 'mineral',
     veinData: {
       'minecraft:overworld': [900, 90, -45, 300, 200],
     },
@@ -160,7 +179,8 @@ const tfcOreType = [
   {
     name: 'cryolite',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'stone',
+    type: 'mineral',
     veinData: {
       'minecraft:overworld': [900, 90, -45, 300, 200],
     },
@@ -168,7 +188,8 @@ const tfcOreType = [
   {
     name: 'saltpeter',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'stone',
+    type: 'mineral',
     veinData: {
       'minecraft:overworld': [900, 210, 0, 300, 200],
     },
@@ -176,7 +197,8 @@ const tfcOreType = [
   {
     name: 'sylvite',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'stone',
+    type: 'mineral',
     veinData: {
       'minecraft:overworld': [900, 90, -45, 300, 200],
     },
@@ -184,7 +206,8 @@ const tfcOreType = [
   {
     name: 'borax',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'stone',
+    type: 'mineral',
     veinData: {
       'minecraft:overworld': [900, 210, 0, 300, 200],
     },
@@ -192,15 +215,18 @@ const tfcOreType = [
   {
     name: 'halite',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'stone',
+    type: 'mineral',
     veinData: {
       'minecraft:overworld': [1200, 90, 30, 1800, 1500],
     },
   },
+  // tfc gems
   {
     name: 'amethyst',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'diamond',
+    type: 'gem',
     veinData: {
       'minecraft:overworld': [600, 0, -60, 60, 30],
     },
@@ -208,7 +234,8 @@ const tfcOreType = [
   {
     name: 'diamond',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'black_iron',
+    type: 'gem',
     veinData: {
       'minecraft:overworld': [600, 0, -60, 60, 30],
     },
@@ -216,7 +243,8 @@ const tfcOreType = [
   {
     name: 'emerald',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'diamond',
+    type: 'gem',
     veinData: {
       'minecraft:overworld': [600, 0, -60, 60, 30],
     },
@@ -224,7 +252,8 @@ const tfcOreType = [
   {
     name: 'lapis_lazuli',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'iron',
+    type: 'gem',
     veinData: {
       'minecraft:overworld': [600, 0, -60, 60, 30],
     },
@@ -232,7 +261,8 @@ const tfcOreType = [
   {
     name: 'opal',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'iron',
+    type: 'gem',
     veinData: {
       'minecraft:overworld': [600, 0, -60, 60, 30],
     },
@@ -240,7 +270,8 @@ const tfcOreType = [
   {
     name: 'pyrite',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'stone',
+    type: 'gem',
     veinData: {
       'minecraft:overworld': [600, 0, -60, 60, 30],
     },
@@ -248,7 +279,8 @@ const tfcOreType = [
   {
     name: 'ruby',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'black_steel',
+    type: 'gem',
     veinData: {
       'minecraft:overworld': [600, 0, -60, 60, 30],
     },
@@ -256,7 +288,8 @@ const tfcOreType = [
   {
     name: 'sapphire',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'black_steel',
+    type: 'gem',
     veinData: {
       'minecraft:overworld': [600, 0, -60, 60, 30],
     },
@@ -264,7 +297,8 @@ const tfcOreType = [
   {
     name: 'topaz',
     modId: 'tfc',
-    isGraded: false,
+    miningLevel: 'diamond',
+    type: 'gem',
     veinData: {
       'minecraft:overworld': [600, 0, -60, 60, 30],
     },
@@ -362,7 +396,7 @@ tfcOreType.forEach(ore => {
       return;
     }
 
-    let oreImage = ore.isGraded ? `./base/ores/normal_${ore.name}.png` : `./base/ores/${ore.name}.png`
+    let oreImage = ore.type === 'metal' ? `./base/ores/normal_${ore.name}.png` : `./base/ores/${ore.name}.png`
     let rockImage = `./base/rocks/${rock.name}.png`
 
     const [base, overlay] = await Promise.all([
@@ -438,7 +472,7 @@ tfcOreType.forEach(ore => {
           }
           Indicator {
               S:circles <
-                  ${ore.isGraded ? `
+                  ${ore.type === 'metal' ? `
                       tfc:ore/small_${ore.name}, 3
                       tfc:ore/small_${ore.name}, 9
                       tfc:ore/small_${ore.name}, 15
@@ -468,8 +502,8 @@ tfcOreType.forEach(ore => {
     if (rock.replace) {
       return;
     }
-    langData += `"block.kubejs.ore.${ore.name}.${rock.name}": "Normal ${capitalize(rock.name)} ${capitalize(ore.name)}",\n`
-    langData += `"block.kubejs.ore.${ore.name}.${rock.name}.prospected": "${capitalize(ore.name)}",\n`
+    langData += `"block.kubejs.ore.${ore.name}.${rock.name}": "${ore.type === 'metal' ? 'Normal ' : ''}${capitalize(rock.name)} ${ore.name === 'diamond' ? 'Kimberlite' : capitalize(ore.name)}",\n`
+    langData += `"block.kubejs.ore.${ore.name}.${rock.name}.prospected": "${ore.name === 'diamond' ? 'Kimberlite' : capitalize(ore.name)}",\n`
   })
 })
 fs.writeFile('./export.txt', langData, (err) => {

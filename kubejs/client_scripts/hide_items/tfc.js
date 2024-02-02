@@ -5,7 +5,7 @@ JEIEvents.hideItems((event) => {
   global.tfcOreType.forEach((ore) => {
     global.tfcRockType.forEach((rock) => {
       // tfc ore blocks
-      if (ore.isGraded) {
+      if (ore.type === 'metal') {
         event.hide(`${ore.modId}:ore/poor_${ore.name}/${rock.name}`);
         event.hide(`${ore.modId}:ore/normal_${ore.name}/${rock.name}`);
         event.hide(`${ore.modId}:ore/rich_${ore.name}/${rock.name}`);

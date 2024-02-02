@@ -4,7 +4,7 @@ LootJS.modifiers((event) => {
   // custom tfc-style ores
   global.tfcOreType.forEach((ore) => {
     global.vanillaEnableRockType.forEach((rock) => {
-      if (ore.isGraded) {
+      if (ore.type === 'metal') {
         event
           .addBlockLootModifier(`kubejs:ore/${ore.name}/${rock.name}`)
           .replaceLoot(
