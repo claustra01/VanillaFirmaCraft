@@ -122,4 +122,9 @@ ServerEvents.recipes((event) => {
     B: 'minecraft:nether_brick',
     M: '#tfc:mortar',
   });
+
+  // amethyst
+  event.shaped('minecraft:amethyst_block', ['AA', 'AA'], {
+    A: 'tfc:gem/amethyst',
+  });
 });
