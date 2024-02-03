@@ -335,33 +335,6 @@ const vanillaEnableRockType = [
     "dimension": "minecraft:overworld",
     "origin": "minecraft:deepslate"
   },
-  {
-    "name": "granite",
-    "tfc_name": "granite",
-    "replace": true,
-    "hardness": 1.5,
-    "resistance": 6,
-    "dimension": "minecraft:overworld",
-    "origin": "minecraft:granite"
-  },
-  {
-    "name": "diorite",
-    "tfc_name": "diorite",
-    "replace": true,
-    "hardness": 1.5,
-    "resistance": 6,
-    "dimension": "minecraft:overworld",
-    "origin": "minecraft:diorite"
-  },
-  {
-    "name": "andesite",
-    "tfc_name": "andesite",
-    "replace": true,
-    "hardness": 1.5,
-    "resistance": 6,
-    "dimension": "minecraft:overworld",
-    "origin": "minecraft:andesite"
-  },
   // nether
   {
     "name": "netherrack",
@@ -370,23 +343,6 @@ const vanillaEnableRockType = [
     "resistance": 0.4,
     "dimension": "minecraft:the_nether",
     "origin": "minecraft:netherrack"
-  },
-  {
-    "name": "basalt",
-    "tfc_name": "basalt",
-    "replace": true,
-    "hardness": 1.25,
-    "resistance": 4.2,
-    "dimension": "minecraft:the_nether",
-    "origin": "minecraft:basalt"
-  },
-  {
-    "name": "blackstone",
-    "replace": false,
-    "hardness": 1.5,
-    "resistance": 6,
-    "dimension": "minecraft:the_nether",
-    "origin": "minecraft:blackstone"
   },
   // the end
   {
