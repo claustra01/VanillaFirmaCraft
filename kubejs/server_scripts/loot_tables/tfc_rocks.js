@@ -30,45 +30,6 @@ LootJS.modifiers((event) => {
     .removeLoot(Ingredient.all)
     .addLoot('tfc:rock/mossy_cobble/dacite');
 
-  // granite
-  event
-    .addBlockLootModifier('minecraft:granite')
-    .removeLoot(Ingredient.all)
-    .not((n) => {
-      n.matchOffHand('#tfc:chisels')
-    })
-    .addWeightedLoot([1, 4], 'tfc:rock/loose/granite');
-  event
-    .addBlockLootModifier('minecraft:granite')
-    .matchOffHand('#tfc:chisels')
-    .addLoot('tfc:rock/raw/granite');
-
-  // diorite
-  event
-    .addBlockLootModifier('minecraft:diorite')
-    .removeLoot(Ingredient.all)
-    .not((n) => {
-      n.matchOffHand('#tfc:chisels')
-    })
-    .addWeightedLoot([1, 4], 'tfc:rock/loose/diorite');
-  event
-    .addBlockLootModifier('minecraft:diorite')
-    .matchOffHand('#tfc:chisels')
-    .addLoot('tfc:rock/raw/diorite');
-
-  // andesite
-  event
-    .addBlockLootModifier('minecraft:andesite')
-    .removeLoot(Ingredient.all)
-    .not((n) => {
-      n.matchOffHand('#tfc:chisels')
-    })
-    .addWeightedLoot([1, 4], 'tfc:rock/loose/andesite');
-  event
-    .addBlockLootModifier('minecraft:andesite')
-    .matchOffHand('#tfc:chisels')
-    .addLoot('tfc:rock/raw/andesite');
-
   // basalt
   event
     .addBlockLootModifier('minecraft:basalt')

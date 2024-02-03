@@ -1,4 +1,4 @@
-console.info('Tweak TFC rock drops...');
+console.info('Tweak vanilla drops...');
 
 LootJS.modifiers((event) => {
   // deepslate
