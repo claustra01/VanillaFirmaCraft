@@ -53,17 +53,4 @@ LootJS.modifiers((event) => {
     .addBlockLootModifier('minecraft:smooth_basalt')
     .matchOffHand('#tfc:chisels')
     .addLoot('tfc:rock/smooth/basalt');
-
-  // calcite
-  event
-    .addBlockLootModifier('minecraft:calcite')
-    .removeLoot(Ingredient.all)
-    .not((n) => {
-      n.matchOffHand('#tfc:chisels')
-    })
-    .addWeightedLoot([1, 4], 'tfc:rock/loose/chalk')
-  event
-    .addBlockLootModifier('minecraft:smooth_basalt')
-    .matchOffHand('#tfc:chisels')
-    .addLoot('tfc:rock/raw/chalk');
 });
