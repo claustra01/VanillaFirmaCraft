@@ -94,7 +94,7 @@ LootJS.modifiers((event) => {
     .not((n) => { n.matchOffHand('#tfc:chisels') })
     .addWeightedLoot([1, 4], 'tfc:rock/loose/chalk');
   event
-    .addBlockLootModifier('minecraft:smooth_basalt')
+    .addBlockLootModifier('minecraft:calcite')
     .matchOffHand('#tfc:chisels')
     .addLoot('tfc:rock/raw/chalk');
 
