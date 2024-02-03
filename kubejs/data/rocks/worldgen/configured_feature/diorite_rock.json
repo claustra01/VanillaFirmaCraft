@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "tfc:rock/loose/diorite",
+                  "Properties": {
+                    "count": 1,
+                    "water": "empty"
+                  }
+                },
+                "weight": 10
+              },
+              {
+                "data": {
+                  "Name": "tfc:rock/loose/diorite",
+                  "Properties": {
+                    "count": 2,
+                    "water": "empty"
+                  }
+                },
+                "weight": 6
+              },
+              {
+                "data": {
+                  "Name": "tfc:rock/loose/diorite",
+                  "Properties": {
+                    "count": 3,
+                    "water": "empty"
+                  }
+                },
+                "weight": 3
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:diorite",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "tries": 128,
+    "xz_spread": 0,
+    "y_spread": 0
+  }
+}
