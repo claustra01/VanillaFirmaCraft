@@ -9,6 +9,9 @@ ServerEvents.recipes((event) => {
   event.remove('minecraft:deepslate_bricks')
   event.remove('minecraft:chiseled_deepslate')
   event.remove('minecraft:deepslate_tiles')
+  event.shaped('minecraft:cobbled_deepslate', ['RR', 'RR'], {
+    R: 'kubejs:loose_deepslate_rock',
+  });
   event.recipes.tfc.damage_inputs_shapeless_crafting(
     event.recipes.minecraft.crafting_shapeless('minecraft:polished_deepslate', [
       'minecraft:deepslate',
@@ -16,8 +19,8 @@ ServerEvents.recipes((event) => {
     ])
   );
   event.recipes.tfc.damage_inputs_shapeless_crafting(
-    event.recipes.minecraft.crafting_shapeless('4x kubejs:deepslate_brick', [
-      'minecraft:cobbled_deepslate',
+    event.recipes.minecraft.crafting_shapeless('kubejs:deepslate_brick', [
+      'kubejs:loose_deepslate_rock',
       '#tfc:chisels',
     ])
   );
@@ -48,6 +51,9 @@ ServerEvents.recipes((event) => {
   event.remove('minecraft:polished_blackstone')
   event.remove('minecraft:polished_blackstone_bricks')
   event.remove('minecraft:chiseled_polished_blackstone')
+  event.shaped('minecraft:blackstone', ['RR', 'RR'], {
+    R: 'kubejs:loose_blackstone_rock',
+  });
   event.recipes.tfc.damage_inputs_shapeless_crafting(
     event.recipes.minecraft.crafting_shapeless('minecraft:polished_blackstone', [
       'minecraft:blackstone',
@@ -55,8 +61,8 @@ ServerEvents.recipes((event) => {
     ])
   );
   event.recipes.tfc.damage_inputs_shapeless_crafting(
-    event.recipes.minecraft.crafting_shapeless('4x kubejs:blackstone_brick', [
-      'minecraft:blackstone',
+    event.recipes.minecraft.crafting_shapeless('kubejs:blackstone_brick', [
+      'kubejs:loose_blackstone_rock',
       '#tfc:chisels',
     ])
   );
@@ -77,8 +83,16 @@ ServerEvents.recipes((event) => {
     ])
   );
 
+  // netherrack
+  event.shaped('minecraft:netherrack', ['RR', 'RR'], {
+    R: 'kubejs:loose_netherrack_rock',
+  });
+
   // endstone
   event.remove('minecraft:end_stone_bricks');
+  event.shaped('minecraft:end_stone', ['RR', 'RR'], {
+    R: 'kubejs:loose_end_stone_rock',
+  });
   event.shaped('4x minecraft:end_stone_bricks', ['BMB', 'MBM', 'BMB'], {
     B: 'kubejs:end_stone_brick',
     M: '#tfc:mortar',
