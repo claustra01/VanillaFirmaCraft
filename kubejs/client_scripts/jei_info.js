@@ -8,4 +8,6 @@ JEIEvents.information((event) => {
     }
   });
 
+  // flux
+  event.addItem('tfc:powder/flux', ['Flux made from calcite rock, borax, corals, or seashell.'])
 });
