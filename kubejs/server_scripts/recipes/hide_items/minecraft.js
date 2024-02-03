@@ -60,7 +60,7 @@ ServerEvents.recipes((event) => {
 
   // stone blocks
   global.tfcRockType.forEach((rock) => {
-    if (rock.replace === true) {
+    if (rock.replace && rock.vanilla !== 'basalt') {
       event.remove(`minecraft:${rock.vanilla}`);
       event.remove(`minecraft:${rock.vanilla}_stairs`);
       event.remove(`minecraft:${rock.vanilla}_slab`);
@@ -87,7 +87,7 @@ ServerEvents.recipes((event) => {
 
   // wood blocks
   global.tfcWoodType.forEach((wood) => {
-    if (wood.replace === true) {
+    if (wood.replace) {
       global.vanillaWoodBlocks.forEach((type) => {
         event.remove(`minecraft:${wood.vanilla}_${type}`);
       });

@@ -5,14 +5,7 @@ LootJS.modifiers((event) => {
   event
     .addBlockLootModifier('minecraft:stone')
     .removeLoot(Ingredient.all)
-    .not((n) => {
-      n.matchOffHand('#tfc:chisels')
-    })
     .addWeightedLoot([1, 4], 'tfc:rock/loose/dacite');
-  event
-    .addBlockLootModifier('minecraft:stone')
-    .matchOffHand('#tfc:chisels')
-    .addLoot('tfc:rock/raw/dacite');
 
   // stone slab
   event
@@ -34,23 +27,13 @@ LootJS.modifiers((event) => {
   event
     .addBlockLootModifier('minecraft:basalt')
     .removeLoot(Ingredient.all)
-    .not((n) => {
-      n.matchOffHand('#tfc:chisels')
-    })
     .addWeightedLoot([1, 4], 'tfc:rock/loose/basalt');
-  event
-    .addBlockLootModifier('minecraft:basalt')
-    .matchOffHand('#tfc:chisels')
-    .addLoot('tfc:rock/raw/basalt');
   event
     .addBlockLootModifier('minecraft:smooth_basalt')
     .removeLoot(Ingredient.all)
-    .not((n) => {
-      n.matchOffHand('#tfc:chisels')
-    })
     .addWeightedLoot([1, 4], 'tfc:rock/loose/basalt');
   event
-    .addBlockLootModifier('minecraft:smooth_basalt')
-    .matchOffHand('#tfc:chisels')
-    .addLoot('tfc:rock/smooth/basalt');
+    .addBlockLootModifier('minecraft:polished_basalt')
+    .removeLoot(Ingredient.all)
+    .addWeightedLoot([1, 4], 'tfc:rock/loose/basalt');
 });

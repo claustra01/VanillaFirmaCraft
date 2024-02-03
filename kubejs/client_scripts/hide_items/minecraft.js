@@ -84,7 +84,7 @@ JEIEvents.hideItems((event) => {
 
   // stone blocks
   global.tfcRockType.forEach((rock) => {
-    if (rock.replace === true) {
+    if (rock.replace && rock.vanilla !== 'basalt') {
       event.hide(`minecraft:${rock.vanilla}`);
       event.hide(`minecraft:${rock.vanilla}_stairs`);
       event.hide(`minecraft:${rock.vanilla}_slab`);
@@ -121,7 +121,7 @@ JEIEvents.hideItems((event) => {
 
   // wood blocks
   global.tfcWoodType.forEach((wood) => {
-    if (wood.replace === true) {
+    if (wood.replace) {
       global.vanillaWoodBlocks.forEach((type) => {
         event.hide(`minecraft:${wood.vanilla}_${type}`);
       });
