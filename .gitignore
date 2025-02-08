@@ -16,4 +16,6 @@ node_modules
 /config/jei/world
 
 /kubejs/exported
+/.curseclient
+/minecraftinstance.json
 /XaeroWayPoints*
